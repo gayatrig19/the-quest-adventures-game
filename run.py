@@ -32,11 +32,29 @@ class TreasureQuest:
                                   Good luck, Captain!
         """)
 
+    def get_username_input():
+        """
+        Get username input from user.
+        Validate username entered by user.
+        """
+    
+    def start_game(self):
+        """
+        Displays introduction and rules of the game.
+        Asks user if user wants to start the game.
+        Checks if user has entered valid input.
+        """
+        self.display_intro()
+       
+
 # Create an instance of the TreasureQuest class
 game = TreasureQuest()
 
+# Call the start_game method to begin the game
+game.start_game()
+
 # Call the display_intro method
-game.display_intro()
+#game.display_intro()
 
 
 
