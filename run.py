@@ -32,7 +32,7 @@ class TreasureQuest:
                                   Good luck, Captain!
         """)
 
-    def get_username_input():
+    def get_username_input(self):
         """
         Get username input from user.
         Validate username entered by user.
@@ -45,7 +45,25 @@ class TreasureQuest:
         Checks if user has entered valid input.
         """
         self.display_intro()
-       
+        while True:
+            play_choice = input("Are you ready to play the Game? (yes/no):").lower()
+
+            if play_choice == "yes":
+                user_name = self.get_username_input()
+                print(f"Welcome, {user_name} !")
+                break
+            elif play_choice == "no":
+                print("Ahoy, brave adventurer! Your treasure awaits, but it's your choice.")
+                print("Feel free to return whenever you're ready to embark on this epic quest!")
+                retry_choice = input("Are you ready to play the Game? (yes/no):").lower()
+                if retry_choice != "yes":
+                    print("You should enter 'yes' to play the game.")
+            else:
+                print("Invalid choice. Please enter 'yes' or 'no'")
+
+
+
+
 
 # Create an instance of the TreasureQuest class
 game = TreasureQuest()
@@ -54,7 +72,7 @@ game = TreasureQuest()
 game.start_game()
 
 # Call the display_intro method
-#game.display_intro()
+# game.display_intro()
 
 
 
