@@ -34,10 +34,32 @@ class TreasureQuest:
 
     def get_username_input(self):
         """
-        Get username input from user.
+        Prompt the user for username.
         Validate username entered by user.
         """
-    
+        while True:
+            try:
+                username = input("Enter your name:")
+
+                # Checks if the username is empty or contains only spaces
+                if not username.strip():
+                    raise ValueError("Username cannot be empty or contain only spaces.")
+
+                # Checks if the username contains special characters
+                if not username.isalnum():
+                    raise ValueError("Username should only contain letters and numbers.")
+
+                # Checks if the username is too short or too long
+                if len(username) <= 3 or len(username) > 20:
+                    raise ValueError("Username should be between 3 and 20 characters.")
+                
+                return username
+
+            except ValueError as e:
+                print(f"Invalid Input:{e}")
+                print("Please try again.")
+
+
     def start_game(self):
         """
         Displays introduction and rules of the game.
