@@ -3,55 +3,123 @@ class TreasureQuest:
     TreasureQuest class
     """
     def __init__(self):
-        self.story = {
+        self.story_description = {
             "start": {
-                "step_text": "You are in a forest. Do you want to go left or right",
+                "step_text": """
+                    
+                In the heart of the bustling coastal town of Port Haven, 
+                a whispered legend has captured the imaginations of adventurers 
+                and dreamers alike. It speaks of a long-lost
+                treasure, hidden away by a legendary pirate captain, 
+                Captain Blackbeard, centuries ago.The treasure is said 
+                to be unimaginable, with jewels that glitter like stars and 
+                riches beyond measure.
+                You are Captain Alex Sterling, a seasoned sailor and fearless 
+                leader known for your daring voyages across treacherous seas. 
+                The lure of the lost treasure beckons to you, as it does to so 
+                many others. Assemble your crew, for you have resolved to 
+                embark on 'The Quest for the Lost Treasure.'
+                As you set sail aboard the 'Black Serpent', your trusty ship, 
+                two paths stretch before you, each with its own challenges and 
+                mysteries. 
+                -----------------------------------------------------------------          
+                Option 1: Do you navigate the Enchanted Forest, where magic 
+                          fills the air and mythical creatures roam?                                          
+                Option 2: Or do you brave the treacherous Mountains of Shadows, 
+                          where the secrets of the Scepter may be concealed 
+                          among the rugged peaks?        
+                -----------------------------------------------------------------
+                         """,
                 options: {
-                    "left": "left_path",
-                    "right": "right_path"
+                    "Option 1": "enchanted_forest",
+                    "Option 2": "mountains_of_shadow"
                 }
             },
 
-            "left_path": {
-                "step_text": "You encounter a bear! Do you run or climb a tree?",
+            "enchanted_forest": {
+                "step_text": """
+                You choose to navigate the Enchanted Forest, a place where 
+                magic fills the air and mythical creatures roam. As you journey 
+                deeper into the forest, you encounter a wise old owl perched on 
+                a moss-covered branch in the woods who offers you guidance. 
+                The owl speaks to you: 'The path to the treasure lies through 
+                these woods, but it is treacherous and not for the faint of 
+                heart. You must choose your way wisely'. 
+                But the mystical trees with glowing leaves whispers secrets 
+                about the treasure, urging you to trust your own instincts.
+                --------------------------------------------------------------
+                Option 1: Do you accept the owl's guidance?                               
+                Option 2: Or do you decide to follow your own instincts and 
+                          continue the journey through the uncharted depths 
+                          of the Enchanted Forest?
+                --------------------------------------------------------------
+                """,
                 options: {
-                    "run": "end_run",
-                    "climb": "end_climb"
+                    "Option 1": "owl's_guidance",
+                    "option 2": "forest_depths"
                 }
             },
-            "right_path": {
-                "step_text": "You got away safely! The end.",
-                options: {}
+            "mountains_of_shadow": {
+                "step_text": """
+                You choose to brave the treacherous Mountains of Shadows,  
+                a place known for it's unforgiving terrain, where the secrets 
+                of the Scepter may be concealed among the rugged peaks. 
+                As you ascend higher into the formidable mountains, you come 
+                across a fork in the path. One path leads further into the 
+                mountains, while the other path descends towards the 
+                valley.                 
+               ----------------------------------------------------------------
+               Option 1: Do you continue ascending higher into the mountains?                 
+               Option 2: Do you choose to descend towards the valley?         
+               ---------------------------------------------------------------- 
+                """,
+                options: {
+                    "Option 1": "mountain_ascend",
+                    "option 2": "valley_descend"
+                }
             },
-            "end_climb": {
-                "step_text": "You are safe in the tree. The end.",
-            }
+            "owl's_guidance": {
+                "step_text": """
+                You accept the owl's guidance and follow its directions deeper 
+                into the Enchanted Forest. The air becomes thick with 
+                enchantment as you venture through the ancient woods. The wise 
+                old owl leads you to a clearing, where an ancient tree with 
+                mystical inscriptions stands tall, it's bark adorned with 
+                glowing symbols. The owl hoots softly and the inscriptions 
+                come to life, revealing a hidden path to the Treasure Cove 
+                bathed in ethereal light.                            
+               ----------------------------------------------------------------
+               Option 1: Do you follow the illuminated hidden path to the 
+                         Treasure Cove?             
+               Option 2: Or do you trust your instincts and explore your own 
+                         way through the forest?  
+               -----------------------------------------------------------------
+                """,
+                options: {
+                    "Option 1": "treasure_cove",
+                    "option 2": "trust_instincts"
+                }
+            },
         }
         
-
     def display_intro(self):
         """
         Display the game's introduction.
         """
-        print ("""
-               --------------------------------------------------------------------------
-                  Welcome to "The Quest for the Lost Treasure" - an adventure that will
-                  take you on a thrilling journey into the heart of mystery and legend.
-               --------------------------------------------------------------------------
+        print("""
+            --------------------------------------------------------------------------
+             Welcome to "The Quest for the Lost Treasure" - an adventure that will
+             take you on a thrilling journey into the heart of mysteries and legends.
+            --------------------------------------------------------------------------
         """)
         print("""
                  Your goal is to find the legendary treasure hidden by Captain Blackbeard.
-                 Choose your path wisely to succeed. At each step, you will be presented 
-                 with options - Option 1 and Option 2. Enter the number of your choice.
-                 
+                 At each step, you will be presented with options - Option 1 and Option 2.
+                 Choose your path wisely to succeed. 
                  Explore different paths, meet mystical creatures, and make decisions to shape 
                  your destiny.
-                 
-                 Your adventure will lead to various outcomes, including success and disappointment.
-                 
                  Reach the end and discover the treasure to win! Or face a different fate based on 
-                 your choices. Enjoy the journey and embrace the excitement of the unknown. 
-                                  
+                 your choices. Enjoy the journey and embrace the excitement of the unknown. \n
                                   Good luck, Captain!
         """)
 
@@ -62,7 +130,7 @@ class TreasureQuest:
         """
         while True:
             try:
-                username = input("Enter your name:")
+                username = input("Enter your name:\n")
 
                 # Checks if the username is empty or contains only spaces
                 if not username.strip():
@@ -107,9 +175,6 @@ class TreasureQuest:
                 print("Invalid choice. Please enter 'yes' or 'no'")
 
 
-
-
-
 # Create an instance of the TreasureQuest class
 game = TreasureQuest()
 
@@ -118,12 +183,4 @@ game.start_game()
 
 # Call the display_intro method
 # game.display_intro()
-
-
-
-
-
-
-
-
-       
+   
