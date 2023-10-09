@@ -3,8 +3,31 @@ class TreasureQuest:
     TreasureQuest class
     """
     def __init__(self):
-        # Constructor logic here
-        pass  # Placeholder for constructor logic
+        self.story = {
+            "start": {
+                "step_text": "You are in a forest. Do you want to go left or right",
+                options: {
+                    "left": "left_path",
+                    "right": "right_path"
+                }
+            },
+
+            "left_path": {
+                "step_text": "You encounter a bear! Do you run or climb a tree?",
+                options: {
+                    "run": "end_run",
+                    "climb": "end_climb"
+                }
+            },
+            "right_path": {
+                "step_text": "You got away safely! The end.",
+                options: {}
+            },
+            "end_climb": {
+                "step_text": "You are safe in the tree. The end.",
+            }
+        }
+        
 
     def display_intro(self):
         """
