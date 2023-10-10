@@ -480,7 +480,7 @@ class TreasureQuest:
         """
         while True:
             try:
-                username = input("Enter your name:\n")
+                username = input("Enter your name: ").strip().lower()
 
                 # Checks if the username is empty or contains only spaces
                 if not username.strip():
@@ -500,6 +500,31 @@ class TreasureQuest:
                 print(f"Invalid Input:{e}")
                 print("Please try again.")
 
+    
+    def play_game(self, current_step = "start"):
+        """
+        Main function to play the game's story
+        """
+        # Start the story from the beginning
+        while current_step:
+            step = self.story_description[current_step]
+            step_text = step["step_text"]
+            options = step["options"]
+
+            # Display the current step's text
+            print(step_text)
+
+            # Display the options
+            if options:
+                choice = input("Enter your choice (either 1 or 2): ").strip().lower()
+                while choice not in["1", "2"]:
+                    print("Invalid choice. Please enter 1 or 2.")
+                    choice = input("Enter your choice (either 1 or 2): ").strip().lower()
+
+                current_step = options[f"option_{choice}"]
+            else:
+                current_step = None
+
 
     def start_game(self):
         """
@@ -509,27 +534,27 @@ class TreasureQuest:
         """
         self.display_intro()
         while True:
-            play_choice = input("Are you ready to play the Game? (yes/no):").lower()
+            play_choice = input("Are you ready to play the Game? (yes/no): ").strip().lower()
 
             if play_choice == "yes":
                 user_name = self.get_username_input()
                 print(f"Welcome, {user_name} !")
+                self.play_game()
                 break
             elif play_choice == "no":
                 print("Ahoy, brave adventurer! Your treasure awaits, but it's your choice.")
                 print("Feel free to return whenever you're ready to embark on this epic quest!")
-                retry_choice = input("Are you ready to play the Game? (yes/no):").lower()
+                retry_choice = input("Are you ready to play the Game? (yes/no): ").strip().lower()
                 if retry_choice != "yes":
                     print("You should enter 'yes' to play the game.")
             else:
                 print("Invalid choice. Please enter 'yes' or 'no'")
 
-
-# Create an instance of the TreasureQuest class
-game = TreasureQuest()
-
-# Call the start_game method to begin the game
-game.start_game()
+if __name__ == "__main__":
+    # Create an instance of the TreasureQuest class
+    game = TreasureQuest()
+    # Call the start_game method to begin the game
+    game.start_game()
 
 
    
