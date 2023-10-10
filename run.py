@@ -31,7 +31,7 @@ class TreasureQuest:
                           among the rugged peaks?        
                 -----------------------------------------------------------------
                      """,
-                options: {
+                "options": {
                     "option_1": "enchanted_forest",
                     "option_2": "mountains_of_shadows"
                 }
@@ -55,7 +55,7 @@ class TreasureQuest:
                           of the Enchanted Forest?
                 --------------------------------------------------------------
                 """,
-                options: {
+                "options": {
                     "option_1": "owl's_guidance",
                     "option_2": "forest_depths"
                 }
@@ -75,7 +75,7 @@ class TreasureQuest:
                 Option 2: Do you choose to descend towards the valley?         
                ---------------------------------------------------------------- 
                 """,
-                options: {
+                "options": {
                     "option_1": "mountain_ascend",
                     "option_2": "valley_descend"
                 }
@@ -98,7 +98,7 @@ class TreasureQuest:
                          way through the forest?  
                -----------------------------------------------------------------
                 """,
-                options: {
+                "options": {
                     "option_1": "treasure_cove",
                     "option_2": "trust_instincts"
                 }
@@ -126,7 +126,7 @@ class TreasureQuest:
                           take her magical amulet?
               ----------------------------------------------------------------------
                 """,
-                options: {
+                "options": {
                     "option_1": "mystic_pond",
                     "option_2": "mischief_fairy"
                 }
@@ -145,7 +145,7 @@ class TreasureQuest:
                           the temple?                          
            ------------------------------------------------------------------------- 
                 """,
-                options: {
+                "options": {
                     "option_1": "temple_of_shadows",
                     "option_2": "mountain_summit"
                 }
@@ -163,7 +163,7 @@ class TreasureQuest:
                           valley?         
             ------------------------------------------------------------------------- 
                 """,
-                options: {
+                "options": {
                     "option_1": "cave_depths",
                     "option_2": "explore_valley"
                 }
@@ -192,7 +192,7 @@ class TreasureQuest:
                 With a heavy heart, you retreat from this false promise of riches, 
                 your quest left unfulfilled and your dreams shattered.
                 """,
-                options: {}
+                "options": {}
             },
 
             "trust_instincts": {
@@ -214,7 +214,7 @@ class TreasureQuest:
                          move stealthily and avoid potential dangers?
             --------------------------------------------------------------------------
                 """,
-                options: {
+                "options": {
                     "option_1": "crystal_amulet",
                     "option_2": "cloak_of_shadows"
                 }
@@ -234,7 +234,7 @@ class TreasureQuest:
                 Congratulations! You have successfully navigated the Enchanted Forest 
                 and uncovered the long-lost treasure. 
                 """,
-                options: {}
+                "options": {}
             },
 
             "mischief_fairy": {
@@ -256,7 +256,7 @@ class TreasureQuest:
                 Option 2: Or do you follow the path to the Mountains of Shadows?
             ----------------------------------------------------------------------------
                 """,
-                options: {
+                "options": {
                     "option_1": "whispering_marsh",
                     "option_2": "mountains_of_shadows"
                 }
@@ -278,7 +278,7 @@ class TreasureQuest:
                 unexpected failure. It's a bitterly disappointing outcome for your 
                 adventure, and you must decide what to do next.
                 """,
-                options: {}
+                "options": {}
             },
 
             "mountain_summit": {
@@ -297,7 +297,7 @@ class TreasureQuest:
                 Option 2: Do you take the journal and study its contents for clues? 
             ---------------------------------------------------------------------------------
                 """,
-                options: {
+                "options": {
                     "option_1": "explore_summit",
                     "option_2": "journal_clues"
                 }
@@ -316,7 +316,7 @@ class TreasureQuest:
                  triumph, and the fabled riches of Captain Blackbeard are yours 
                  to enjoy. 
                 """,
-                options: {}
+                "options": {}
             },
 
             "explore_valley": {
@@ -335,7 +335,7 @@ class TreasureQuest:
                           for the treasure elsewhere, perhaps in the Enchanted Forest? 
             ---------------------------------------------------------------------------------
                 """,
-                options: {
+                "options": {
                     "option_1": "nomad_group",
                     "option_2": "enchanted_forest"
                 }
@@ -359,7 +359,7 @@ class TreasureQuest:
                  trapped forever unable to return back to ship, in hope to return to 
                  Port Haven someday, alive. 
                 """,
-                options: {}
+                "options": {}
             },
 
             "cloak_of_shadows": {
@@ -382,7 +382,7 @@ class TreasureQuest:
                  You have completed the quest and achieved great success! The Treasure is 
                  all yours.
                 """,
-                options: {}
+                "options": {}
             },
 
             "whispering_marsh": {
@@ -400,7 +400,7 @@ class TreasureQuest:
                 to Port Haven with newfound wisdom and tales of the Enchanted Forest and the 
                 Whispering Marsh.
                 """,
-                options: {}
+                "options": {}
             },
 
             "explore_summit": {
@@ -415,7 +415,7 @@ class TreasureQuest:
                 The legend of Captain Blackbeard's treasure remains an elusive mystery, 
                 and your quest ends in disappointment.
                 """,
-                options: {}
+                "options": {}
             },
 
             "journal_clues": {
@@ -431,7 +431,7 @@ class TreasureQuest:
                "The Quest for the Lost Treasure." Your name will be remembered in the history
                 of pirate legends.
                 """,
-                options: {}
+                "options": {}
             },
 
             "nomad_group": {
@@ -448,8 +448,8 @@ class TreasureQuest:
                 has lead you to unfullfilled quest. 
                 You have failed the "The Quest for the Lost Treasure".
                 """,
-                options: {}
-            },
+                "options": {}
+            }
         }
         
     def display_intro(self):
@@ -530,5 +530,6 @@ game = TreasureQuest()
 
 # Call the start_game method to begin the game
 game.start_game()
+
 
    
