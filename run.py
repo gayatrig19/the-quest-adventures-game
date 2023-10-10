@@ -139,11 +139,11 @@ class TreasureQuest:
                 but you persevere. You eventually reach the summit, where you 
                 spot an ancient temple known as the Temple of Shadows. This 
                 temple is rumored to hold clues to the treasure's location.                                             
-           ------------------------------------------------------------------------- 
+              -----------------------------------------------------------------------
                 Option 1: Do you enter the Temple of Shadows?                                  
                 Option 2: Do you explore the mountain summit without entering 
                           the temple?                          
-           ------------------------------------------------------------------------- 
+              ------------------------------------------------------------------------
                 """,
                 "options": {
                     "option_1": "temple_of_shadows",
@@ -177,8 +177,9 @@ class TreasureQuest:
                 and you finally arrive in a magical glade bathed in the soft 
                 glow of moonlight.
 
-                However, as you reach the center of the glade, where the entrance 
-                to the Treasure Cove should be, you find a sense of emptiness. 
+                However, as you reach the center of the glade, where the 
+                entrance to the Treasure Cove should be, you find a sense 
+                of emptiness. 
 
                 Confusion clouds your mind as you explore the area. 
                 It becomes apparent that this Treasure Cove is nothing like 
@@ -189,8 +190,8 @@ class TreasureQuest:
                 Treasure Cove was a disappointing dead end. The owls' advice, 
                 although well-intentioned, did not hold the key to Captain 
                 Blackbeard's long-lost treasure. 
-                With a heavy heart, you retreat from this false promise of riches, 
-                your quest left unfulfilled and your dreams shattered.
+                With a heavy heart, you retreat from this false promise of 
+                riches, your quest left unfulfilled and your dreams shattered.
                 """,
                 "options": {}
             },
@@ -457,20 +458,23 @@ class TreasureQuest:
         Display the game's introduction.
         """
         print("""
-            --------------------------------------------------------------------------
-             Welcome to "The Quest for the Lost Treasure" - an adventure that will
-             take you on a thrilling journey into the heart of mysteries and legends.
-            --------------------------------------------------------------------------
+           ----------------------------------------------------------------------------------
+               Welcome to "The Quest for the Lost Treasure" - an adventure that will
+               take you on a thrilling journey into the heart of mysteries and legends.
+           ----------------------------------------------------------------------------------
         """)
         print("""
-                 Your goal is to find the legendary treasure hidden by Captain Blackbeard.
-                 At each step, you will be presented with options - Option 1 and Option 2.
-                 Choose your path wisely to succeed. 
-                 Explore different paths, meet mystical creatures, and make decisions to shape 
-                 your destiny.
-                 Reach the end and discover the treasure to win! Or face a different fate based on 
-                 your choices. Enjoy the journey and embrace the excitement of the unknown. \n
-                                  Good luck, Captain!
+               Your goal is to find the legendary treasure hidden by Captain Blackbeard.
+               At each step, you will be presented with options. 
+                
+               Choose your path wisely to succeed. 
+                 
+               Explore different paths, meet mystical creatures, and make decisions to shape 
+               your destiny.
+                 
+               Reach the end and discover the treasure to win! Or face a different fate based 
+               on your choices. Enjoy the journey and embrace the excitement of the unknown. 
+                                            Good luck!!
         """)
 
     def get_username_input(self):
