@@ -467,21 +467,21 @@ class TreasureQuest:
         """
         print("""
            ----------------------------------------------------------------------------------
-               Welcome to "The Quest for the Lost Treasure" - an adventure that will
+               Welcome to "The Quest for the Lost Treasure" - an adventure that will   
                take you on a thrilling journey into the heart of mysteries and legends.
            ----------------------------------------------------------------------------------
         """)
         print("""
-               Your goal is to find the legendary treasure hidden by Captain Blackbeard.
-               At each step, you will be presented with options. 
+                Your goal is to find the legendary treasure hidden by Captain Blackbeard.
+                           At each step, you will be presented with options. 
                 
-               Choose your path wisely to succeed. 
+                                Choose your path wisely to succeed. 
                  
-               Explore different paths, meet mystical creatures, and make decisions to shape 
-               your destiny.
+               Explore different paths, meet mystical creatures, and make decisions to 
+                                       shape your destiny.
                  
                Reach the end and discover the treasure to win! Or face a different fate based 
-               on your choices. Enjoy the journey and embrace the excitement of the unknown. 
+                on your choices. Enjoy the journey and embrace the excitement of the unknown. 
                                             Good luck!!
         """)
 
@@ -492,7 +492,7 @@ class TreasureQuest:
         """
         while True:
             try:
-                username = input("Enter your name: ").strip().lower()
+                username = input("\nEnter your name: ").strip().lower()
 
                 # Checks if the username is empty or contains only spaces
                 if not username.strip():
@@ -509,7 +509,7 @@ class TreasureQuest:
                 return username
 
             except ValueError as e:
-                print(f"Invalid Input:{e}")
+                print(f"Invalid Input: {e}")
                 print("Please try again.")
 
     
@@ -546,19 +546,19 @@ class TreasureQuest:
         """
         self.display_intro()
         while True:
-            play_choice = input("Are you ready to play the Game? (yes/no): ").strip().lower()
+            play_choice = input("\nAre you ready to play the Game? (yes/no): ").strip().lower()
 
             if play_choice == "yes":
                 user_name = self.get_username_input()
-                print(f"Welcome, {user_name} !")
+                print(f"\nWelcome, {user_name}!")
                 self.play_game()
                 break
             elif play_choice == "no":
-                print("Ahoy, brave adventurer! Your treasure awaits, but it's your choice.")
-                print("Feel free to return whenever you're ready to embark on this epic quest!")
-                retry_choice = input("Are you ready to play the Game? (yes/no): ").strip().lower()
+                print("\nAhoy, brave adventurer! Your treasure awaits, but it's your choice.")
+                print("Enter 'yes' to play the game.")
+                retry_choice = input("\nAre you ready to play the Game? (yes/no): ").strip().lower()
                 if retry_choice != "yes":
-                    print("You should enter 'yes' to play the game.")
+                    print("You should enter 'yes' to play the game.\n")
             else:
                 print("Invalid choice. Please enter 'yes' or 'no'")
 
