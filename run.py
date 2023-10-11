@@ -12,13 +12,13 @@ class TreasureQuest:
                 adventurers and dreamers alike. It speaks of a long-lost
                 treasure, hidden away by a legendary pirate captain,
                 Captain Blackbeard, centuries ago.
-                
+
                 The treasure is said to be unimaginable, with jewels that
                 glitter like stars and riches beyond measure.
 
                 You, Captain {username}, are a seasoned sailor and fearless
                 leader known for your daring voyages across treacherous seas.
-                
+
                 The lure of the lost treasure beckons to you, as it does to so
                 many others. Assemble your crew, for you have resolved to
                 embark on 'The Quest for the Lost Treasure.'
@@ -215,7 +215,8 @@ class TreasureQuest:
                 shattered.
 
                 """,
-                "options": {}
+                "options": {},
+                "outcome": "failure"
             },
 
             "trust_instincts": {
@@ -251,6 +252,7 @@ class TreasureQuest:
                 The air becomes even more charged with mystical energy as you
                 tread the illuminated path. The hidden route leads you to a
                 breathtaking waterfall deep within the Enchanted Forest.
+
                 Behind the waterfall, you discover a hidden grotto filled with
                 radiant crystals and guarded by ancient spirits. In the heart
                 of the grotto lies Captain Blackbeard's treasure, glittering
@@ -259,7 +261,8 @@ class TreasureQuest:
                 Treasure shines with a wealth beyond imagination, a sight
                 that would make even the most seasoned sailor's heart race.
                 """,
-                "options": {}
+                "options": {},
+                "outcome": "success"
             },
 
             "mischief_fairy": {
@@ -306,7 +309,8 @@ class TreasureQuest:
                 disappointment. Your quest for treasure has ended in unexpected
                 failure.
                 """,
-                "options": {}
+                "options": {},
+                "outcome": "failure"
             },
 
             "mountain_summit": {
@@ -343,7 +347,7 @@ class TreasureQuest:
                  short of breathtaking. The room is illuminated by the radiant
                  glow of Captain Blackbeard's long-lost treasure, casting
                  reflections on the cave's ancient walls.
-                 
+
                  It sparkles with unimaginable wealth — golden doubloons,
                  exquisite jewels, and priceless artifacts, meticulously
                  arranged in the trove, a testament to the legendary Captain's
@@ -353,7 +357,8 @@ class TreasureQuest:
                  time seems to stand still as you and your crew gaze upon this
                  extraordinary fortune, now yours to claim.
                 """,
-                "options": {}
+                "options": {},
+                "outcome": "success"
             },
 
             "explore_valley": {
@@ -392,7 +397,7 @@ class TreasureQuest:
                  the heart of a magical illusion. The forest plays tricks on
                  your perception, and you find yourself lost in a maze of
                  illusions.
-            
+
                  The illusions have disoriented you. Despite your best efforts,
                  the treasure remains elusive. Acknowledging the deception and
                  the unsuccessful quest, you decide to return to your ship.
@@ -403,7 +408,8 @@ class TreasureQuest:
                  You and the rest of the crew are trapped forever unable to
                  return back to ship.
                 """,
-                "options": {}
+                "options": {},
+                "outcome": "failure"
             },
 
             "cloak_of_shadows": {
@@ -426,7 +432,8 @@ class TreasureQuest:
                  you now stand at the entrance of Captain Blackbeard's long-
                  lost treasure trove. The Treasure is all yours.
                 """,
-                "options": {}
+                "options": {},
+                "outcome": "success"
             },
 
             "whispering_marsh": {
@@ -445,7 +452,8 @@ class TreasureQuest:
                 treasure. The magical amulet, though dimmed, guides you back
                 through the Enchanted Forest.
                 """,
-                "options": {}
+                "options": {},
+                "outcome": "failure"
             },
 
             "explore_summit": {
@@ -462,7 +470,8 @@ class TreasureQuest:
                 crew return to Port Haven with heavy hearts, the enigmatic
                 altar's secrets continue to haunt you.
                 """,
-                "options": {}
+                "options": {},
+                "outcome": "failure"
             },
 
             "journal_clues": {
@@ -473,53 +482,65 @@ class TreasureQuest:
                 you to a hidden passage deep within the heart of the mountains.
                 This passage, known as the Ethereal Gorge, is said to be a
                 mystical gateway to a realm where Captain Blackbeard's
-                treasure awaits. Your crew rejoices as you navigate the secret
-                path, and upon arrival, you discover the ethereal realm filled
-                with unimaginable wealth.
+                treasure awaits.
+
+                Your crew rejoices as you navigate the secret path, and upon
+                arrival, you discover the ethereal realm filled with
+                unimaginable wealth. The quest for Captain Blackbeard's
+                long-lost treasure, which has driven many to the ends of the
+                earth, has finally reached its dazzling conclusion in the
+                heart of this mystical realm.
                 """,
-                "options": {}
+                "options": {},
+                "outcome": "success"
             },
 
             "nomad_group": {
                 "step_text": """
-                Embracing the nomads' offer, you choose the path of wisdom over riches. 
-                The nomads welcome you into their fold, revealing the hidden wonders of the 
-                mountains — their sacred sites, age-old rituals, and the tales carried by 
-                the mountain winds. As you immerse yourself in this ancient way of life, 
-                the quest for Captain Blackbeard's treasure becomes a distant echo. 
-                The nomads become your mentors, and the mountains, your home. 
-                While the allure of untold wealth fades, the richness of knowledge and 
-                a different kind of treasure envelope you in the mystique of these lands.
-                You have diverted from your goal to search for treasure. This unexpected turn 
-                has lead you to unfulfilled quest. 
-                You have failed the "The Quest for the Lost Treasure".
+            ---------------------------------------------------------------------------------
+                Embracing the nomads' offer, you choose the path of wisdom
+                over riches. The nomads welcome you into their fold, revealing
+                the hidden wonders of the mountains — their sacred sites, age-
+                old rituals, and the tales carried by the mountain winds. As
+                you immerse yourself in this ancient way of life, the quest
+                for Captain Blackbeard's treasure fades away completely,
+                leaving you on a different journey.
+
+                The nomads become your mentors, and the mountains, your home.
+                While the allure of untold wealth fades, the truth remains
+                that the long-lost treasure of Captain Blackbeard has eluded
+                you. Your quest has diverged, and the path you now follow
+                leads away from the treasure. The goal remains unattained.
+                This unexpected turn has lead you to unfulfilled quest.
                 """,
-                "options": {}
+                "options": {},
+                "outcome": "failure"
             }
         }
-        
+
     def display_intro(self):
         """
         Display the game's introduction.
         """
         print("""
            ----------------------------------------------------------------------------------
-               Welcome to "The Quest for the Lost Treasure" - an adventure that will   
-               take you on a thrilling journey into the heart of mysteries and legends.
+                    Welcome to "The Quest for the Lost Treasure" - an adventure
+                     that will take you on a thrilling journey into the heart
+                                   of mysteries and legends.
            ----------------------------------------------------------------------------------
         """)
         print("""
-                Your goal is to find the legendary treasure hidden by Captain Blackbeard.
-                           At each step, you will be presented with options. 
-                
-                                Choose your path wisely to succeed. 
-                 
-               Explore different paths, meet mystical creatures, and make decisions to 
-                                       shape your destiny.
-                 
-               Reach the end and discover the treasure to win! Or face a different fate based 
-                on your choices. Enjoy the journey and embrace the excitement of the unknown. 
-                                            Good luck!!
+                Your goal is to find the legendary treasure hidden by Captain
+                Blackbeard. At each step, you will be presented with options.
+
+                            Choose your path wisely to succeed.
+
+                Explore different paths, meet mystical creatures, and make
+                            decisions to shape your destiny.
+
+                Reach the end and discover the treasure to win! Or face a
+                different fate based on your choices. Enjoy the journey and
+                embrace the excitement of the unknown. Good luck!!
         """)
 
     def get_username_input(self):
@@ -533,7 +554,7 @@ class TreasureQuest:
 
                 # Checks if the username is empty or contains only spaces
                 if not username.strip():
-                    raise ValueError("Username cannot be empty or contain only spaces.")
+                    raise ValueError("Username cannot be empty or contain spaces.")
 
                 # Checks if the username contains special characters
                 if not username.isalnum():
@@ -542,7 +563,7 @@ class TreasureQuest:
                 # Checks if the username is too short or too long
                 if len(username) <= 3 or len(username) > 20:
                     raise ValueError("Username should be between 3 and 20 characters.")
-                
+
                 return username
 
             except ValueError as e:
@@ -558,13 +579,20 @@ class TreasureQuest:
             step = self.story_description[current_step]
             step_text = step["step_text"]
             options = step["options"]
+            outcome = step.get("outcome")
 
             # Display the current step's text
             print(step_text)
 
             # Display the options
+            if outcome == "success":
+                print("Congratulations! You have succeeded in ypur quest.")
+                break  # End the game
+            elif outcome == "failure":
+                print("Unfortunately, your quest has ended in failure.")
+                break   # End the game
             if options:
-                choice = input("Enter your choice (either 1 or 2): ").strip().lower()
+                choice = input("Enter your choice (1 or 2): ").strip().lower()
                 while choice not in ["1", "2"]:
                     print("Invalid choice. Please enter 1 or 2.")
                     choice = input("Enter your choice (either 1 or 2): ").strip().lower()
@@ -598,6 +626,7 @@ class TreasureQuest:
                 print("Invalid choice. Please enter 'yes' or 'no'")
 
 if __name__ == "__main__":
+
 
     # Create an instance of the TreasureQuest class
     game = TreasureQuest()
