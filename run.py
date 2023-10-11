@@ -16,7 +16,7 @@ class TreasureQuest:
                 The treasure is said to be unimaginable, with jewels that
                 glitter like stars and riches beyond measure.
 
-                You, Captain {user_name}, are a seasoned sailor and fearless
+                You, Captain {username}, are a seasoned sailor and fearless
                 leader known for your daring voyages across treacherous seas.
                 
                 The lure of the lost treasure beckons to you, as it does to so
@@ -272,7 +272,7 @@ class TreasureQuest:
                 magical amulet pulsates in rhythm with the heartbeat of the
                 forest.
 
-                You arrive at a mysterious crossroad adorned with luminescent 
+                You arrive at a mysterious crossroad adorned with luminescent
                 flowers. The amulet flickers, presenting you with two paths —
                 one leading to the towering mountain summit, shrouded in mist,
                 and the other to the Whispering Marsh, where the air is thick
@@ -282,7 +282,7 @@ class TreasureQuest:
                 Option 1: Do you take the route to the Whispering Marsh,
                           hoping for a different way to treasure?
                 Option 2: Or do you follow the path to the mountain summit?
-            ---------------------------------------------------------------------------
+            --------------------------------------------------------------------------
                 """,
                 "options": {
                     "option_1": "whispering_marsh",
@@ -302,8 +302,8 @@ class TreasureQuest:
                 To your dismay, the Treasure Pillar reveals nothing more than a
                 weathered relic. The anticipated golden doubloons, exquisite
                 jewels, and priceless artifacts are absent. Your crew,
-                initially brimming with excitement, now shares in the
-                disappointment. Your quest treasure has ended in unexpected
+                initially brimming with excitement, now shares in the loads of
+                disappointment. Your quest for treasure has ended in unexpected
                 failure.
                 """,
                 "options": {}
@@ -311,18 +311,21 @@ class TreasureQuest:
 
             "mountain_summit": {
                 "step_text": """
+            ---------------------------------------------------------------------------
                 You decide to continue ascending higher into the mountains.
                 The path is treacherous, and your crew faces many challenges,
                 but you persevere. You eventually reach the summit, where the
-                air is thin, and the view is breathtaking. As you explore the
-                mountain summit, you come across an ancient stone altar bathed
-                in the glow of the setting sun. The altar seems to emanate a
-                mysterious energy, and nearby, you find an old journal that
-                hints at the treasure's connection to celestial alignments.
-            --------------------------------------------------------------------------
-                Option 1: Or do you continue exploring the summit without
+                air is thin, and the view is breathtaking.
+
+                As you explore the mountain summit, you come across an ancient
+                stone altar bathed in the glow of the setting sun. The altar
+                seems to emanate a mysterious energy, and nearby, you find an
+                old journal that hints at the treasure's connection to
+                celestial alignments.
+            ---------------------------------------------------------------------------
+                Option 1: Do you continue exploring the summit without
                           delving into the mysteries of the altar?
-                Option 2: Do you take the journal and study its contents for
+                Option 2: or do you take the journal and study its contents for
                           clues?
             ---------------------------------------------------------------------------
                 """,
@@ -334,132 +337,145 @@ class TreasureQuest:
 
             "cave_depths": {
                 "step_text": """
-                 Entering the hidden cave leads you to the Treasure Chamber,
-                 where you discover Captain Blackbeard's long-lost treasure.
-                 It sparkles with unimaginable wealth—golden doubloons,
-                 exquisite jewels, and priceless artifacts.
+            ----------------------------------------------------------------------------
+                 Entering the hidden cave leads you to the Treasure Chamber.
+                 As you step into the Chamber, the sight before you is nothing
+                 short of breathtaking. The room is illuminated by the radiant
+                 glow of Captain Blackbeard's long-lost treasure, casting
+                 reflections on the cave's ancient walls.
+                 
+                 It sparkles with unimaginable wealth — golden doubloons,
+                 exquisite jewels, and priceless artifacts, meticulously
+                 arranged in the trove, a testament to the legendary Captain's
+                 vast riches.
 
-                 After a perilous journey, you and your loyal crew unearth the
-                 long-lost treasure of Captain Blackbeard. You return to Port
-                 Haven as legends in your own right, having successfully
-                 completed "The Quest for the Lost Treasure." The town
-                 celebrates your triumph, and the fabled riches of Captain
-                 Blackbeard are your's to enjoy.
+                 The air is heavy with the weight of history, and for a moment,
+                 time seems to stand still as you and your crew gaze upon this
+                 extraordinary fortune, now yours to claim.
                 """,
                 "options": {}
             },
 
             "explore_valley": {
                 "step_text": """
-                You choose to leave the cave, and step into the valley. In the 
-                distance, you spot a group of nomads, their tents set against the 
-                backdrop of towering peaks. They are nomads who have roamed these 
-                valleys for generations.As you approach, they welcome you with 
-                curiosity sparkling in their eyes. The nomads share tales of ancient
-                wisdom and the interconnectedness of the natural world. They offer you 
-                choice to join them into their nomadic fold.   
-            ---------------------------------------------------------------------------------
-                Option 1: Will you join them and learn the ancient secrets of these 
-                          lands, abandoning your quest for Captain Blackbeard's treasure?
-                Option 2: Or do you politely decline their offer and continue your search 
-                          for the treasure elsewhere, perhaps in the Enchanted Forest? 
-            ---------------------------------------------------------------------------------
+            -----------------------------------------------------------------------------
+                You choose to leave the cave, and step into the valley. In the
+                distance, you spot a group of nomads, their tents set against
+                the backdrop of towering peaks. They are nomads who have
+                roamed these valleys for generations.
+
+                As you approach, they welcome you with curiosity sparkling in
+                their eyes. The nomads share tales of ancient wisdom and the
+                interconnectedness of the natural world. They offer you choice
+                to join them into their nomadic fold.
+
+            ------------------------------------------------------------------------------
+                Option 1: Will you join them and learn the ancient secrets of
+                          these lands, taking a different path?
+                Option 2: Or do you politely decline their offer and continue
+                          your search for the treasure elsewhere, perhaps in
+                          the Enchanted Forest, following your own instincts?
+            -------------------------------------------------------------------------------
                 """,
                 "options": {
                     "option_1": "nomad_group",
-                    "option_2": "enchanted_forest"
+                    "option_2": "trust_instincts"
                 }
             },
 
             "crystal_amulet": {
                 "step_text": """
-                 You accept the Crystal Amulet, trusting in it's ability to reveal hidden 
-                 truths along your chosen path. However, as you continue your journey,
-                 the amulet's revelations lead you into the heart of a magical illusion. 
-                 The Enchanted Forest plays tricks on your perception, and you find yourself 
-                 lost in a maze of illusions. The Crystal Amulet, once believed to be a 
-                 source of guidance, now feels like a mere trinket.
-                 The illusions have disoriented you, and the Enchanted Forest seems to 
-                 shift around you. Despite your best efforts, the treasure remains elusive.
-                 Acknowledging the deception and the unsuccessful quest, you decide to 
-                 return to your ship. 
-                 Becoming more reckless and underestimating the dangers of the Enchanted 
-                 Forest leads to further pitfalls. You find yourself trapped in a magical 
-                 illusions, unable to find your way out. You and the rest of the crew are 
-                 trapped forever unable to return back to ship, in hope to return to 
-                 Port Haven someday, alive. 
+            --------------------------------------------------------------------------------
+                 You accept the Crystal Amulet, trusting in it's ability to
+                 reveal hidden truths along your chosen path. However, as you
+                 continue your journey, the amulet's revelations lead you into
+                 the heart of a magical illusion. The forest plays tricks on
+                 your perception, and you find yourself lost in a maze of
+                 illusions.
+            
+                 The illusions have disoriented you. Despite your best efforts,
+                 the treasure remains elusive. Acknowledging the deception and
+                 the unsuccessful quest, you decide to return to your ship.
+
+                 Becoming more reckless and underestimating the dangers of the
+                 Enchanted Forest leads to further pitfalls. You find yourself
+                 trapped in a magical illusions, unable to find your way out.
+                 You and the rest of the crew are trapped forever unable to
+                 return back to ship.
                 """,
                 "options": {}
             },
 
             "cloak_of_shadows": {
                 "step_text": """
-                 You decide to take the Cloak of Shadows, allowing you to move stealthily 
-                 through the Enchanted Forest. The cloak proves to be an invaluable asset 
-                 and a wise decision, helping you navigate through potential dangers with
-                 ease.
-                 As you progress, the Cloak of Shadows unveils hidden paths and protects 
-                 you from magical traps. Your journey becomes a dance of shadows and 
-                 subtlety, and the heart of the Enchanted Forest reveals itself to you. 
-                 Congratulations! Your strategic choice of the Cloak of Shadows has proven 
-                 invaluable. The mystical garment allowed you to move stealthily through the 
-                 Enchanted Forest, avoiding mythical creatures and treacherous terrain. Your 
-                 cautious approach has paid off, and you now stand at the entrance of 
-                 Captain Blackbeard's long-lost treasure trove.
-                 Your success becomes legendary in Port Haven, and tales of your triumphant 
-                 quest are shared throughout the town.Your name echoes through the ages as 
-                 the brave soul who outsmarted the challenges of the Enchanted Forest.
-                 You have completed the quest and achieved great success! The Treasure is 
-                 all yours.
+            --------------------------------------------------------------------------------
+                 You decide to take the Cloak of Shadows, allowing you to move
+                 stealthily through the Enchanted Forest. The cloak proves to
+                 be an invaluable asset and a wise decision, helping you
+                 navigate through potential dangers with ease.
+
+                 As you progress, the Cloak of Shadows unveils hidden paths
+                 and protects you from magical traps. Your journey becomes a
+                 dance of shadows and subtlety, and the heart of the Forest
+                 reveals itself to you.
+
+                 Your strategic choice of the Cloak of Shadows has proven to
+                 be the key to your success. The mystical garment allowed you
+                 to move through the Forest, avoiding mythical creatures and
+                 treacherous terrain. Your cautious approach has paid off, and
+                 you now stand at the entrance of Captain Blackbeard's long-
+                 lost treasure trove. The Treasure is all yours.
                 """,
                 "options": {}
             },
 
             "whispering_marsh": {
                 "step_text": """
-                Choosing the path to the Whispering Marsh, you encounter mysterious lights
-                and sounds. However, as you venture deeper, the path becomes increasingly
-                challenging, and the amulet's light starts to fade. Eventually, you find
-                yourself in a dense swamp surrounded by mist. The amulet's magic wanes, 
-                and you realize you are lost. The Whispering Marsh proves to be a 
-                treacherous maze with no sign of the treasure.
-                Realizing the difficulty of the Whispering Marsh, you choose to retreat 
-                and return to Port Haven without the treasure. The magical amulet, though 
-                dimmed, guides you back through the Enchanted Forest.
-                While your quest for the long-lost treasure remains unfulfilled, you return 
-                to Port Haven with newfound wisdom and tales of the Enchanted Forest and the 
-                Whispering Marsh.
+            --------------------------------------------------------------------------------
+                Choosing the path to the Whispering Marsh, you encounter
+                mysterious lights and sounds. However, as you venture deeper,
+                the path becomes increasingly challenging, and the amulet's
+                light starts to fade. Eventually, you find yourself in a dense
+                swamp surrounded by mist. The amulet's magic wanes, and you
+                realize you are lost.
+
+                The Whispering Marsh proves to be a treacherous maze with no
+                sign of the treasure. Realizing the difficulty of the Marsh,
+                you choose to retreat and return to Port Haven without the
+                treasure. The magical amulet, though dimmed, guides you back
+                through the Enchanted Forest.
                 """,
                 "options": {}
             },
 
             "explore_summit": {
                 "step_text": """
-                Opting to continue exploring the summit without investigating the mysteries
-                of the altar proves to be a missed opportunity. Unaware to you, the altar
-                held vital clues to the treasure's location, and you now realize your
-                oversight. Your journey through the mountains leads to a challenging path
-                filled with unexpected dangers and obstacles, but no treasure in sight.
-                Unfortunately, your quest remains incomplete.As you and your crew return to 
-                Port Haven with heavy hearts, the enigmatic altar's secrets continue to haunt you. 
-                The legend of Captain Blackbeard's treasure remains an elusive mystery, 
-                and your quest ends in disappointment.
+            --------------------------------------------------------------------------------
+                Opting to continue exploring the summit without investigating
+                the mysteries of the altar proves to be a missed opportunity.
+                Unaware to you, the altar held vital clues to the treasure's
+                location, and you now realize your oversight. Your journey
+                through the mountains leads to a challenging path filled with
+                unexpected dangers and obstacles, but no treasure in sight.
+
+                Unfortunately, your quest remains incomplete. As you and your
+                crew return to Port Haven with heavy hearts, the enigmatic
+                altar's secrets continue to haunt you.
                 """,
                 "options": {}
             },
 
             "journal_clues": {
                 "step_text": """
-                You choose to take the journal and study it's contents. As you delve into the
-                ancient writings, you decipher clues that lead you to a hidden passage deep
-                within the heart of the mountains. This passage, known as the Ethereal Gorge,
-                is said to be a mystical gateway to a realm where Captain Blackbeard's
-                treasure awaits. Your crew rejoices as you navigate the secret path, and upon
-                arrival, you discover the ethereal realm filled with unimaginable wealth.
-
-               Congratulations! You have successfully uncovered the treasure and completed
-               "The Quest for the Lost Treasure." Your name will be remembered in the history
-                of pirate legends.
+            -------------------------------------------------------------------------------
+                You choose to take the journal and study it's contents. As you
+                delve into the ancient writings, you decipher clues that lead
+                you to a hidden passage deep within the heart of the mountains.
+                This passage, known as the Ethereal Gorge, is said to be a
+                mystical gateway to a realm where Captain Blackbeard's
+                treasure awaits. Your crew rejoices as you navigate the secret
+                path, and upon arrival, you discover the ethereal realm filled
+                with unimaginable wealth.
                 """,
                 "options": {}
             },
@@ -533,7 +549,6 @@ class TreasureQuest:
                 print(f"Invalid Input: {e}")
                 print("Please try again.")
 
-    
     def play_game(self, current_step="start"):
         """
         Main function to play the game's story.
@@ -558,7 +573,6 @@ class TreasureQuest:
             else:
                 current_step = None
 
-
     def start_game(self):
         """
         Displays introduction and rules of the game.
@@ -577,7 +591,7 @@ class TreasureQuest:
             elif play_choice == "no":
                 print("\nAhoy, brave adventurer! Your treasure awaits, but it's your choice.")
                 print("Enter 'yes' to play the game.")
-                retry_choice = input("\nAre you ready to play the Game? (yes/no): ").strip().lower()
+                retry_choice = input("\nAre you ready to play the Game?(yes/no): ").strip().lower()
                 if retry_choice != "yes":
                     print("You should enter 'yes' to play the game.\n")
             else:
@@ -589,4 +603,3 @@ if __name__ == "__main__":
     game = TreasureQuest()
     # Call the start_game method to begin the game
     game.start_game()
-   
