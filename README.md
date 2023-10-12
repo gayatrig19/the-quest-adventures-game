@@ -1,32 +1,15 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Quest For The Lost Treasure
 
-Welcome,
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
 
-## Reminders
+# Purpose 
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+"The Quest for the Lost Treasure" is a text-based adventure game developed in Python. Embark on a thrilling journey through mysterious lands and uncover hidden treasures in this interactive adventure that will put your decision-making skills to the test. 
 
-## Creating the Heroku app
+"The Quest for Lost Treasure" is an interactive game where you take on the role of a daring adventurer on a mission to uncover the secrets of a lost treasure. Your decisions and choices will determine the outcome of your quest, and the path you choose to follow will lead to various encounters, puzzles, and, ultimately, the treasure's location.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
 
-Connect your GitHub repository and deploy as normal.
 
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
