@@ -541,7 +541,7 @@ class TreasureQuest:
                 Reach the end and discover the treasure to win! Or face a
                 different fate based on your choices. Enjoy the journey and
                 embrace the excitement of the unknown. Good luck!!
-        """)
+            """)
 
     def get_username_input(self):
         """
@@ -570,6 +570,22 @@ class TreasureQuest:
                 print(f"Invalid Input: {e}")
                 print("Please try again.")
 
+    def restart_game(self):
+        """
+        Function to restart the game. Regardless of success
+        or failure user is offered an option to restart the game.
+        """
+        while True:
+            restart_choice = input("Would you like to play again?(yes/no): ").strip().lower()
+            if restart_choice == "yes":
+                self.start_game()
+                break
+            elif restart_choice == "no":
+                print("Thank you for playing.")
+                break
+            else:
+                print("Invalid choice. Enter 'yes' to play again or 'no' to exit.")
+
     def play_game(self, current_step="start"):
         """
         Main function to play the game's story.
@@ -586,11 +602,13 @@ class TreasureQuest:
 
             # Display the options
             if outcome == "success":
-                print("Congratulations! You have succeeded in ypur quest.")
-                break  # End the game
+                print("Congratulations! You have succeeded in your quest.")
+                self.restart_game()
+                break
             elif outcome == "failure":
                 print("Unfortunately, your quest has ended in failure.")
-                break   # End the game
+                self.restart_game()
+                break
             if options:
                 choice = input("Enter your choice (1 or 2): ").strip().lower()
                 while choice not in ["1", "2"]:
@@ -609,7 +627,8 @@ class TreasureQuest:
         """
         self.display_intro()
         while True:
-            play_choice = input("\nAre you ready to play the Game? (yes/no): ").strip().lower()
+            play_choice = input("\nAre you ready to play the Game? (yes/no): "
+                                ).strip().lower()
 
             if play_choice == "yes":
                 user_name = self.get_username_input()
@@ -625,10 +644,12 @@ class TreasureQuest:
             else:
                 print("Invalid choice. Please enter 'yes' or 'no'")
 
+
 if __name__ == "__main__":
-
-
-    # Create an instance of the TreasureQuest class
+    """
+    Creates an instance of the TreasureQuest class and
+    initiates the game by calling the start_game method.
+    """
     game = TreasureQuest()
-    # Call the start_game method to begin the game
+
     game.start_game()
