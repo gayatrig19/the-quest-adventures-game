@@ -522,6 +522,16 @@ class TreasureQuest:
         """
         Display the game's introduction.
         """
+        # Credit for ASCII art: https://fsymbols.com/generators/carty/
+        print("""
+               
+                ████████╗██╗░░██╗███████╗   ░██████╗░██╗░░░██╗███████╗░██████╗████████╗
+                ╚══██╔══╝██║░░██║██╔════╝   ██╔═══██╗██║░░░██║██╔════╝██╔════╝╚══██╔══╝
+                ░░░██║░░░███████║█████╗░░   ██║██╗██║██║░░░██║█████╗░░╚█████╗░░░░██║░░░
+                ░░░██║░░░██╔══██║██╔══╝░░   ╚██████╔╝██║░░░██║██╔══╝░░░╚═══██╗░░░██║░░░
+                ░░░██║░░░██║░░██║███████╗   ░╚═██╔═╝░╚██████╔╝███████╗██████╔╝░░░██║░░░
+                ░░░╚═╝░░░╚═╝░░╚═╝╚══════╝   ░░░╚═╝░░░░╚═════╝░╚══════╝╚═════╝░░░░╚═╝░░░
+        """)  # noqa
         print("""
            ----------------------------------------------------------------------------------
                     Welcome to "The Quest for the Lost Treasure" - an adventure
@@ -554,7 +564,7 @@ class TreasureQuest:
 
                 # Checks if the username is empty or contains only spaces
                 if not username.strip():
-                    raise ValueError("Username cannot be empty or contain spaces.")
+                    raise ValueError("Username cannot be empty or contain only spaces.")
 
                 # Checks if the username contains special characters
                 if not username.isalnum():
