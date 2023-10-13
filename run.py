@@ -93,7 +93,7 @@ class TreasureQuest:
                 print("Thank you for playing.")
                 break
             else:
-                print("Invalid choice. Enter 'yes' to play again or 'no' to exit.")
+                print("Invalid choice. Enter 'yes' to play again or 'no' to exit.")  # noqa
 
     def play_game(self, current_step="start"):
         """
@@ -122,7 +122,8 @@ class TreasureQuest:
                 choice = input("Enter your choice (1 or 2): ").strip().lower()
                 while choice not in ["1", "2"]:
                     print("Invalid choice. Please enter 1 or 2.")
-                    choice = input("Enter your choice (either 1 or 2): ").strip().lower()
+                    choice = input("Enter your choice (either 1 or 2): "
+                                   ).strip().lower()
 
                 current_step = options[f"option_{choice}"]
             else:
@@ -145,10 +146,10 @@ class TreasureQuest:
                 self.play_game()
                 break
             elif play_choice == "no":
-                print("\nAhoy, brave adventurer! Your treasure awaits, but it's your choice.")
-                print("It seems you have not type 'yes'. Enter 'yes' to play the game.\n")
+                print("\nAhoy, brave adventurer! Your treasure awaits")
+                print("It seems you have not type 'yes'. Enter 'yes' to play the game.\n")  # noqa
             else:
-                print("Invalid choice. Please enter 'yes' or 'no'")
+                print("Invalid choice. Enter 'yes' or 'no'")
 
 
 if __name__ == "__main__":
