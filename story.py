@@ -6,35 +6,32 @@
 story_description = {
             "start": {
                 "step_text": """
-            -------------------------------------------------------------------
-                In the heart of the bustling coastal town of Port Haven,
-                a whispered legend has captured the imaginations of
-                adventurers and dreamers alike. It speaks of a long-lost
-                treasure, hidden away by a legendary pirate captain,
-                Captain Blackbeard, centuries ago.
+    ------------------------------------------------------------
+    In the heart of the bustling coastal town of Port Haven,
+    a whispered legend has captured the imaginations of
+    adventurers and dreamers alike. It speaks of a long-lost
+    treasure, hidden away by a legendary pirate captain,
+    Captain Blackbeard, centuries ago.
 
-                The treasure is said to be unimaginable, with jewels that
-                glitter like stars and riches beyond measure.
+    The treasure is said to be unimaginable, with jewels that
+    glitter like stars and riches beyond measure.
 
-                You, Captain Alex Sterling, are a seasoned sailor and fearless
-                leader known for your daring voyages across treacherous seas.
+    You, Captain Alex Sterling, are a seasoned sailor and fearless
+    leader known for your daring voyages across treacherous seas.
 
-                The lure of the lost treasure beckons to you, as it does to so
-                many others. Assemble your crew, for you have resolved to
-                embark on 'The Quest for the Lost Treasure.'
+    As you set sail aboard the 'Black Serpent', your trusty ship,
+    you and your crew have arrived at a mysterious island where
+    two paths stretch before you, each with its own challenges and
+    mysteries.
 
-                As you set sail aboard the 'Black Serpent', your trusty ship,
-                you and your crew have arrived at a mysterious island where
-                two paths stretch before you, each with its own challenges and
-                mysteries.
+    -----------------------------------------------------------------
+    Option 1: Do you navigate the Enchanted Forest, where magic
+              fills the air and mythical creatures roam?
 
-            -----------------------------------------------------------------------
-                Option 1: Do you navigate the Enchanted Forest, where magic
-                          fills the air and mythical creatures roam?
-                Option 2: Or do you brave the treacherous Mountains of Shadows,
-                          where the secrets of the Scepter may be concealed
-                          among the rugged peaks?
-            ------------------------------------------------------------------------
+    Option 2: Or do you brave the treacherous Mountains of Shadows,
+               where the secrets of the Scepter may be concealed
+               among the rugged peaks?
+    ------------------------------------------------------------------
                      """,
                 "options": {
                     "option_1": "enchanted_forest",
@@ -44,25 +41,25 @@ story_description = {
 
             "enchanted_forest": {
                 "step_text": """
-            ------------------------------------------------------------------------
-                You choose to navigate the Enchanted Forest, a place where
-                magic fills the air and mythical creatures roam. As you journey
-                deeper into the forest, you encounter a wise old owl perched on
-                a moss-covered branch in the woods who offers you guidance.
+    ------------------------------------------------------------------
+    You choose to navigate the Enchanted Forest, a place where
+    magic fills the air and mythical creatures roam. As you journey
+    deeper into the forest, you encounter a wise old owl perched on
+    a moss-covered branch in the woods who offers you guidance.
 
-                The owl speaks to you: 'The path to the treasure lies through
-                these woods, but it is treacherous and not for the faint of
-                heart. You must choose your way wisely'.
+    The owl speaks to you: 'The path to the treasure lies through
+    these woods, but it is treacherous and not for the faint of
+    heart. You must choose your way wisely'.
 
-                But the mystical trees with glowing leaves whispers secrets
-                about the treasure, urging you to trust your own instincts.
+    But the mystical trees with glowing leaves whispers secrets
+    about the treasure, urging you to trust your own instincts.
 
-            ------------------------------------------------------------------------
-                Option 1: Do you accept the owl's guidance?
-                Option 2: Or do you decide to follow your own instincts and
-                          continue the journey through the uncharted depths
-                          of the forest?
-            ------------------------------------------------------------------------
+    -------------------------------------------------------------------
+    Option 1: Do you accept the owl's guidance?
+    Option 2: Or do you decide to follow your own instincts and
+              continue the journey through the uncharted depths
+              of the forest?
+    -------------------------------------------------------------------
                 """,
                 "options": {
                     "option_1": "owl's_guidance",

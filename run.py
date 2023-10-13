@@ -30,24 +30,24 @@ class TreasureQuest:
                 ░░░╚═╝░░░╚═╝░░╚═╝╚══════╝   ░░░╚═╝░░░░╚═════╝░╚══════╝╚═════╝░░░░╚═╝░░░
         """)  # noqa
         print("""
-           ----------------------------------------------------------------------------------
-                    Welcome to "The Quest for the Lost Treasure" - an adventure
-                     that will take you on a thrilling journey into the heart
-                                   of mysteries and legends.
-           ----------------------------------------------------------------------------------
+    --------------------------------------------------------------------------
+            Welcome to "The Quest for the Lost Treasure" - an adventure
+            that will take you on a thrilling journey into the heart
+                         of mysteries and legends.
+    --------------------------------------------------------------------------
         """)
         print("""
-                Your goal is to find the legendary treasure hidden by Captain
-                Blackbeard. At each step, you will be presented with options.
+            Your goal is to find the legendary treasure hidden by Captain
+            Blackbeard. At each step, you will be presented with options.
 
-                            Choose your path wisely to succeed.
+                      Choose your path wisely to succeed.
 
-                Explore different paths, meet mystical creatures, and make
-                            decisions to shape your destiny.
+            Explore different paths, meet mystical creatures, and make
+                        decisions to shape your destiny.
 
-                Reach the end and discover the treasure to win! Or face a
-                different fate based on your choices. Enjoy the journey and
-                embrace the excitement of the unknown. Good luck!!
+            Reach the end and discover the treasure to win! Or face a
+            different fate based on your choices. Enjoy the journey and
+            embrace the excitement of the unknown. Good luck!!
             """)
 
     def get_username_input(self):
@@ -57,7 +57,7 @@ class TreasureQuest:
         """
         while True:
             try:
-                username = input("Enter your name: ").strip().lower()
+                username = input("\nEnter your name: ").strip().lower()
 
                 # Checks if the username is empty or contains only spaces
                 if not username.strip():
