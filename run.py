@@ -145,9 +145,6 @@ class TreasureQuest:
             elif play_choice == "no":
                 print("\nAhoy, brave adventurer! Your treasure awaits, but it's your choice.")
                 print("Enter 'yes' to play the game.")
-                retry_choice = input("\nAre you ready to play the Game?(yes/no): ").strip().lower()
-                if retry_choice != "yes":
-                    print("You should enter 'yes' to play the game.\n")
             else:
                 print("Invalid choice. Please enter 'yes' or 'no'")
 
