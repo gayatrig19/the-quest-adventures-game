@@ -61,15 +61,15 @@ class TreasureQuest:
 
                 # Checks if the username is empty or contains only spaces
                 if not username.strip():
-                    raise ValueError("Username cannot be empty or contain only spaces.")
+                    raise ValueError("Username cannot be empty or contain only spaces.")  # noqa
 
                 # Checks if the username contains special characters
                 if not username.isalnum():
-                    raise ValueError("Username should only contain letters and numbers.")
+                    raise ValueError("Username should only contain letters and numbers.")  # noqa
 
                 # Checks if the username is too short or too long
                 if len(username) <= 3 or len(username) > 20:
-                    raise ValueError("Username should be between 3 and 20 characters.")
+                    raise ValueError("Username should be between 3 and 20 characters.")  # noqa
 
                 return username
 
@@ -79,11 +79,13 @@ class TreasureQuest:
 
     def restart_game(self):
         """
-        Function to restart the game. Regardless of success
-        or failure user is offered an option to restart the game.
+        Function to restart the game.
+        Regardless of success or failure user is offered
+        an option to restart the game.
         """
         while True:
-            restart_choice = input("Would you like to play again?(yes/no): ").strip().lower()
+            restart_choice = input("Would you like to play again?(yes/no): "
+                                   ).strip().lower()
             if restart_choice == "yes":
                 self.start_game()
                 break
