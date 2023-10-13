@@ -57,19 +57,19 @@ class TreasureQuest:
         """
         while True:
             try:
-                username = input("\nEnter your name: ").strip().lower()
+                username = input("Enter your name: ").strip().lower()
 
                 # Checks if the username is empty or contains only spaces
                 if not username.strip():
-                    raise ValueError("Username cannot be empty or contain only spaces.")  # noqa
+                    raise ValueError("\nUsername cannot be empty or contain only spaces.")  # noqa
 
                 # Checks if the username contains special characters
                 if not username.isalnum():
-                    raise ValueError("Username should only contain letters and numbers.")  # noqa
+                    raise ValueError("\nUsername should only contain letters and numbers.")  # noqa
 
                 # Checks if the username is too short or too long
                 if len(username) <= 3 or len(username) > 20:
-                    raise ValueError("Username should be between 3 and 20 characters.")  # noqa
+                    raise ValueError("\nUsername should be between 3 and 20 characters.")  # noqa
 
                 return username
 
@@ -111,11 +111,11 @@ class TreasureQuest:
 
             # Display the options
             if outcome == "success":
-                print("Congratulations! You have succeeded in your quest.")
+                print("Congratulations! You have succeeded in your quest.\n")
                 self.restart_game()
                 break
             elif outcome == "failure":
-                print("Unfortunately, your quest has ended in failure.")
+                print("Unfortunately, your quest has ended in failure.\n")
                 self.restart_game()
                 break
             if options:
@@ -146,7 +146,7 @@ class TreasureQuest:
                 break
             elif play_choice == "no":
                 print("\nAhoy, brave adventurer! Your treasure awaits, but it's your choice.")
-                print("Enter 'yes' to play the game.")
+                print("It seems you have not type 'yes'. Enter 'yes' to play the game.\n")
             else:
                 print("Invalid choice. Please enter 'yes' or 'no'")
 
