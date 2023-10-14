@@ -90,7 +90,11 @@ class TreasureQuest:
                 self.start_game()
                 break
             elif restart_choice == "no":
-                print("Thank you for playing.")
+                print("""
+    **----------------------------------------------------------**
+                   Thank you for playing.
+    **----------------------------------------------------------**
+                   """)
                 break
             else:
                 print("Invalid choice. Enter 'yes' to play again or 'no' to exit.")  # noqa
@@ -111,11 +115,23 @@ class TreasureQuest:
 
             # Display the options
             if outcome == "success":
-                print("Congratulations! You have succeeded in your quest.\n")
+                print("""
+**----------------------------------------------------------------------------**
+        Congratulations on your triumphant adventure! You have succeeded in
+        your quest. As you sail back to Port Haven with your treasure-laden
+        ship, the tales of your courage and determination will inspire
+        generations to come. Thank you for joining us on this epic voyage, 
+        and may your future adventures be as legendary as this one. 
+**----------------------------------------------------------------------------**
+                    \n""")
                 self.restart_game()
                 break
             elif outcome == "failure":
-                print("Unfortunately, your quest has ended in failure.\n")
+                print("""
+**----------------------------------------------------------------------------**
+    Unfortunately, your quest for the lost treasure has ended in failure.
+**----------------------------------------------------------------------------**
+                    \n""")
                 self.restart_game()
                 break
             if options:
@@ -143,17 +159,17 @@ class TreasureQuest:
             if play_choice == "yes":
                 user_name = self.get_username_input()
                 print(f"""
-                   Welcome aboard, Captain {user_name}!""")
+                   Welcome aboard, {user_name}!""")
                 print("""
-         Our story starts in the heart of the bustling coastal town of 
+         Our story starts in the heart of the bustling coastal town of
          Port Haven. A whispered legend has captured the imaginations of
-         adventurers and dreamers alike. It speaks of a long-lost treasure, 
+         adventurers and dreamers alike. It speaks of a long-lost treasure,
          hidden away centuries ago.""")
-                print(f""" 
-         The treasure is said to be unimaginable, with jewels that glitter 
+                print(f"""
+         The treasure is said to be unimaginable, with jewels that glitter
          like stars and riches beyond measure.
 
-         You, Captain {user_name}, are a seasoned sailor and fearless leader 
+         You, Captain {user_name}, are a seasoned sailor and fearless leader
          known for your daring voyages across treacherous seas.
                 """)
                 self.play_game()
