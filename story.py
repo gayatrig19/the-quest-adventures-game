@@ -6,20 +6,19 @@
 story_description = {
             "start": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         As you set sail aboard the 'Black Serpent', your trusty ship,
         you and your crew have arrived at a mysterious island where
         two paths stretch before you, each with its own challenges and
         mysteries.
 
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Option 1: Do you navigate the Enchanted Forest, where magic
                   fills the air and mythical creatures roam?
-
         Option 2: Or do you brave the treacherous Mountains of Shadows,
                   where the secrets of the Scepter may be concealed
                   among the rugged peaks?
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
                      """,
                 "options": {
                     "option_1": "enchanted_forest",
@@ -29,7 +28,7 @@ story_description = {
 
             "enchanted_forest": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         You choose to navigate the Enchanted Forest, a place where
         magic fills the air and mythical creatures roam. As you journey
         deeper into the forest, you encounter a wise old owl perched on
@@ -42,13 +41,12 @@ story_description = {
         But the mystical trees with glowing leaves whispers secrets
         about the treasure, urging you to trust your own instincts.
 
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Option 1: Do you accept the owl's guidance?
-
         Option 2: Or do you decide to follow your own instincts and
                   continue the journey through the uncharted depths
                   of the forest?
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
                 """,
                 "options": {
                     "option_1": "owl's_guidance",
@@ -58,7 +56,7 @@ story_description = {
 
             "mountains_of_shadows": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         You choose to brave the treacherous Mountains of Shadows,
         a place known for it's unforgiving terrain, where the secrets
         of the Scepter may be concealed among the rugged peaks.
@@ -68,11 +66,10 @@ story_description = {
         mountains, while the other path descends towards the
         valley.
 
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Option 1: Do you continue ascending higher into the mountains?
-
         Option 2: Do you choose to descend towards the valley?
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
                 """,
                 "options": {
                     "option_1": "mountain_ascend",
@@ -82,7 +79,7 @@ story_description = {
 
             "owl's_guidance": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         You accept the owl's guidance and follow it's directions deeper
         into the Enchanted Forest. The air becomes thick with
         enchantment as you venture through the ancient woods.
@@ -93,13 +90,12 @@ story_description = {
         come to life, revealing a hidden path to the Treasure Cove
         bathed in ethereal light.
 
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Option 1: Do you follow the illuminated hidden path to the
                   Treasure Cove?
-
         Option 2: Or do you trust your instincts and explore your own
                   way through the forest?
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
                 """,
                 "options": {
                     "option_1": "treasure_cove",
@@ -109,7 +105,7 @@ story_description = {
 
             "forest_depths": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         You decide to continue your journey without the owl's help,
         trusting your own instincts. As you venture deeper into the
         forest, suddenly, a mystical pond appears before you, it's
@@ -122,13 +118,12 @@ story_description = {
         you my magical amulet to aid your quest. But beware, for it
         comes with a price!"
 
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Option 1: Do you follow the path reflected in the pond's
                   waters, and decline the fairy's offer?
-
         Option 2: Or do you choose to accept the fairy's offer and
                   take her magical amulet?
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
                 """,
                 "options": {
                     "option_1": "mystic_pond",
@@ -138,19 +133,18 @@ story_description = {
 
             "mountain_ascend": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         You decide to continue ascending higher into the mountains.
         The path is treacherous, and your crew faces many challenges,
         but you persevere. You eventually reach the summit, where you
         spot an ancient temple known as the Temple of Shadows. This
         temple is rumored to hold clues to the treasure's location.
 
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Option 1: Do you enter the Temple of Shadows?
-
         Option 2: Do you explore the mountain summit without entering
                   the temple?
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
                 """,
                 "options": {
                     "option_1": "temple_of_shadows",
@@ -160,18 +154,17 @@ story_description = {
 
             "valley_descend": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         You choose to descend towards the valley. The path takes you
         to a mysterious cave entrance hidden among the rocks. Inside
         the cave, you discover a series of tunnels and chambers that
         seem to lead deeper into the mountains.
 
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Option 1: Do you venture further into the cave's depths?
-
         Option 2: Or do you decide to leave the cave and explore the
                   valley?
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
                 """,
                 "options": {
                     "option_1": "cave_depths",
@@ -181,7 +174,7 @@ story_description = {
 
             "treasure_cove": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Following the hidden path revealed by the owl takes you
         through weaving ancient trees and sparkling ferns. The
         anticipation in the air grows heavier with each step,
@@ -205,7 +198,7 @@ story_description = {
 
             "trust_instincts": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         You choose to trust your instincts and explore your own way
         through the Enchanted Forest. As you venture deeper, the
         ancient trees seem to whisper encouragement, and the air
@@ -216,13 +209,12 @@ story_description = {
         The Spirit Guardian offers you two enchanted artifacts, each
         with it's own magical properties.
 
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Option 1: Do you accept the Crystal Amulet, said to reveal
                   hidden truths along the chosen path?
-
         Option 2: Or do you take the Cloak of Shadows, which allows
                   you to move stealthily and avoid potential dangers?
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
                 """,
                 "options": {
                     "option_1": "crystal_amulet",
@@ -232,7 +224,7 @@ story_description = {
 
             "mystic_pond": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         You decide to follow the path reflected in the pond's waters.
         The air becomes even more charged with mystical energy as you
         tread the illuminated path. The hidden route leads you to a
@@ -252,7 +244,7 @@ story_description = {
 
             "mischief_fairy": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         You choose to accept the fairy's offer and take her magical
         amulet, trusting it to guide you through the forest. The
         amulet glows with an ethereal light as you continue your
@@ -266,12 +258,11 @@ story_description = {
         and the other to the Whispering Marsh, where the air is thick
         with enchantment.
 
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Option 1: Do you take the route to the Whispering Marsh,
                   hoping for a different way to treasure?
-
         Option 2: Or do you follow the path to the mountain summit?
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
                 """,
                 "options": {
                     "option_1": "whispering_marsh",
@@ -281,7 +272,7 @@ story_description = {
 
             "temple_of_shadows": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         As you enter the dimly lit Temple of Shadows, the air thick
         with ancient mystique, you discover what appears to be a
         hidden Treasure Pillar at it's heart. With great anticipation,
@@ -301,7 +292,7 @@ story_description = {
 
             "mountain_summit": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         You decide to continue ascending higher into the mountains.
         The path is treacherous, and your crew faces many challenges,
         but you persevere. You eventually reach the summit, where the
@@ -313,13 +304,12 @@ story_description = {
         old journal that hints at the treasure's connection to
         celestial alignments.
 
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Option 1: Do you continue exploring the summit without
                   delving into the mysteries of the altar?
-
         Option 2: or do you take the journal and study its contents for
                   clues?
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
                 """,
                 "options": {
                     "option_1": "explore_summit",
@@ -329,7 +319,7 @@ story_description = {
 
             "cave_depths": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Entering the hidden cave leads you to the Treasure Chamber.
         As you step into the Chamber, the sight before you is nothing
         short of breathtaking. The room is illuminated by the radiant
@@ -351,7 +341,7 @@ story_description = {
 
             "explore_valley": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         You choose to leave the cave, and step into the valley. In the
         distance, you spot a group of nomads, their tents set against
         the backdrop of towering peaks. They are nomads who have
@@ -362,14 +352,13 @@ story_description = {
         interconnectedness of the natural world. They offer you choice
         to join them into their nomadic fold.
 
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Option 1: Will you join them and learn the ancient secrets of
                   these lands, taking a different path?
-
         Option 2: Or do you politely decline their offer and continue
                   your search for the treasure elsewhere, perhaps in
                   the Enchanted Forest, following your own instincts?
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
                 """,
                 "options": {
                     "option_1": "nomad_group",
@@ -379,7 +368,7 @@ story_description = {
 
             "crystal_amulet": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         You accept the Crystal Amulet, trusting in it's ability to
         reveal hidden truths along your chosen path. However, as you
         continue your journey, the amulet's revelations lead you into
@@ -402,7 +391,7 @@ story_description = {
 
             "cloak_of_shadows": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         You decide to take the Cloak of Shadows, allowing you to move
         stealthily through the Enchanted Forest. The cloak proves to
         be an invaluable asset and a wise decision, helping you
@@ -424,7 +413,7 @@ story_description = {
 
             "whispering_marsh": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Choosing the path to the Whispering Marsh, you encounter
         mysterious lights and sounds. However, as you venture deeper,
         the path becomes increasingly challenging, and the amulet's
@@ -444,7 +433,7 @@ story_description = {
 
             "explore_summit": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Opting to continue exploring the summit without investigating
         the mysteries of the altar proves to be a missed opportunity.
         Unaware to you, the altar held vital clues to the treasure's
@@ -462,7 +451,7 @@ story_description = {
 
             "journal_clues": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         You choose to take the journal and study it's contents. As you
         delve into the ancient writings, you decipher clues that lead
         you to a hidden passage deep within the heart of the mountains.
@@ -483,7 +472,7 @@ story_description = {
 
             "nomad_group": {
                 "step_text": """
-**-----------------------------------------------------------------------------**
+**--------------------------------------------------------------------------**
         Embracing the nomads' offer, you choose the path of wisdom
         over riches. The nomads welcome you into their fold, revealing
         the hidden wonders of the mountains — their sacred sites, age-

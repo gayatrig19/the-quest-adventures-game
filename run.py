@@ -1,4 +1,3 @@
-import os
 from story import story_description
 
 
@@ -15,15 +14,6 @@ class TreasureQuest:
         choices.
         """
         self.story_description = story_description
-
-    def clear_screen(self):
-        """
-        Clear the screen based on th operating system.
-        """
-        if os.name == 'nt':  # For Windows
-            os.system('cls')
-        else:
-            os.system('clear')  # For Unix-based systems (Linux, macOS)
 
     def display_intro(self):
         """
@@ -97,7 +87,6 @@ class TreasureQuest:
             restart_choice = input("Would you like to play again?(yes/no): "
                                    ).strip().lower()
             if restart_choice == "yes":
-                self.clear_screen()
                 self.start_game()
                 break
             elif restart_choice == "no":
@@ -120,9 +109,6 @@ class TreasureQuest:
             step_text = step["step_text"]
             options = step["options"]
             outcome = step.get("outcome")
-
-            # Clear the screen before displaying the current step's text
-            self.clear_screen()
 
             # Display the current step's text
             print(step_text)
