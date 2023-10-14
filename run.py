@@ -1,3 +1,6 @@
+import sys
+import time
+
 from story import story_description
 
 
@@ -15,6 +18,16 @@ class TreasureQuest:
         """
         self.story_description = story_description
 
+    def type_text(self, text, delay=0.03):
+        """
+        Print text with a typing effect.
+        """
+        for char in text:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(delay)
+        print()
+
     def display_intro(self):
         """
         Display the game's introduction.
@@ -29,7 +42,7 @@ class TreasureQuest:
     ░░░██║░░░██║░░██║███████╗   ░╚═██╔═╝░╚██████╔╝███████╗██████╔╝░░░██║░░░
     ░░░╚═╝░░░╚═╝░░╚═╝╚══════╝   ░░░╚═╝░░░░╚═════╝░╚══════╝╚═════╝░░░░╚═╝░░░
         """)  # noqa
-        print("""
+        self.type_text("""
 **----------------------------------------------------------------------------**
          Welcome to "The Quest for the Lost Treasure" - an adventure
          that will take you on a thrilling journey into the heart
@@ -90,7 +103,7 @@ class TreasureQuest:
                 self.start_game()
                 break
             elif restart_choice == "no":
-                print("""
+                self.type_text("""
     **----------------------------------------------------------**
                    Thank you for playing.
     **----------------------------------------------------------**
@@ -158,24 +171,25 @@ class TreasureQuest:
 
             if play_choice == "yes":
                 user_name = self.get_username_input()
-                print(f"""
+                self.type_text(f"""
                    Welcome aboard, {user_name}!""")
                 print("""
          Our story starts in the heart of the bustling coastal town of
          Port Haven. A whispered legend has captured the imaginations of
          adventurers and dreamers alike. It speaks of a long-lost treasure,
-         hidden away centuries ago.""")
-                print(f"""
+         hidden away centuries ago.
+
          The treasure is said to be unimaginable, with jewels that glitter
          like stars and riches beyond measure.
-
+                      """)
+                self.type_text(f"""
          You, Captain {user_name}, are a seasoned sailor and fearless leader
          known for your daring voyages across treacherous seas.
                 """)
                 self.play_game()
                 break
             elif play_choice == "no":
-                print("\nAhoy, brave adventurer! Your treasure awaits")
+                print("\nAhoy, brave adventurer! Your treasure awaits.")
                 print("It seems you have not type 'yes'. Enter 'yes' to play the game.\n")  # noqa
             else:
                 print("Invalid choice. Enter 'yes' or 'no'")
