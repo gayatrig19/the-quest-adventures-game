@@ -1,3 +1,4 @@
+import os
 from story import story_description
 
 
@@ -14,6 +15,15 @@ class TreasureQuest:
         choices.
         """
         self.story_description = story_description
+
+    def clear_screen(self):
+        """
+        Clear the screen based on th operating system.
+        """
+        if os.name == 'nt':  # For Windows
+            os.system('cls')
+        else:
+            os.system('clear')  # For Unix-based systems (Linux, macOS)
 
     def display_intro(self):
         """
@@ -87,6 +97,7 @@ class TreasureQuest:
             restart_choice = input("Would you like to play again?(yes/no): "
                                    ).strip().lower()
             if restart_choice == "yes":
+                self.clear_screen()
                 self.start_game()
                 break
             elif restart_choice == "no":
@@ -110,6 +121,9 @@ class TreasureQuest:
             options = step["options"]
             outcome = step.get("outcome")
 
+            # Clear the screen before displaying the current step's text
+            self.clear_screen()
+
             # Display the current step's text
             print(step_text)
 
@@ -120,8 +134,8 @@ class TreasureQuest:
         Congratulations on your triumphant adventure! You have succeeded in
         your quest. As you sail back to Port Haven with your treasure-laden
         ship, the tales of your courage and determination will inspire
-        generations to come. Thank you for joining us on this epic voyage, 
-        and may your future adventures be as legendary as this one. 
+        generations to come. Thank you for joining us on this epic voyage,
+        and may your future adventures be as legendary as this one.
 **----------------------------------------------------------------------------**
                     \n""")
                 self.restart_game()
