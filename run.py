@@ -53,7 +53,7 @@ class TreasureQuest:
          Your goal is to find the legendary treasure hidden by Captain
          Blackbeard. At each step, you will be presented with options.
 
-                 Choose your path wisely to succeed.
+                   Choose your path wisely to succeed.
 
          Explore different paths, meet mystical creatures, and make
                     decisions to shape your destiny.
@@ -74,20 +74,20 @@ class TreasureQuest:
 
                 # Checks if the username is empty or contains only spaces
                 if not username.strip():
-                    raise ValueError("\nUsername cannot be empty or contain only spaces.")  # noqa
+                    raise ValueError("Username cannot be empty or contain only spaces.")  # noqa
 
                 # Checks if the username contains special characters
                 if not username.isalnum():
-                    raise ValueError("\nUsername should only contain letters and numbers.")  # noqa
+                    raise ValueError("Username should only contain letters and numbers.")  # noqa
 
                 # Checks if the username is too short or too long
                 if len(username) <= 3 or len(username) > 20:
-                    raise ValueError("\nUsername should be between 3 and 20 characters.")  # noqa
+                    raise ValueError("Username should be between 3 and 20 characters.")  # noqa
 
                 return username
 
             except ValueError as e:
-                print(f"Invalid Input: {e}")
+                print(f"\nInvalid Input: {e}")
                 print("Please try again.")
 
     def restart_game(self):
@@ -104,13 +104,13 @@ class TreasureQuest:
                 break
             elif restart_choice == "no":
                 self.type_text("""
-    **----------------------------------------------------------**
-                   Thank you for playing.
-    **----------------------------------------------------------**
+    **------------------------------------------------------------**
+                       Thank you for playing!!
+    **------------------------------------------------------------**
                    """)
                 break
             else:
-                print("Invalid choice. Enter 'yes' to play again or 'no' to exit.")  # noqa
+                print("\nInvalid choice. Enter 'yes' to play again or 'no' to exit.")  # noqa
 
     def play_game(self, current_step="start"):
         """
@@ -128,7 +128,7 @@ class TreasureQuest:
 
             # Display the options
             if outcome == "success":
-                print("""
+                self.type_text("""
 **----------------------------------------------------------------------------**
         Congratulations on your triumphant adventure! You have succeeded in
         your quest. As you sail back to Port Haven with your treasure-laden
@@ -140,7 +140,7 @@ class TreasureQuest:
                 self.restart_game()
                 break
             elif outcome == "failure":
-                print("""
+                self.type_text("""
 **----------------------------------------------------------------------------**
     Unfortunately, your quest for the lost treasure has ended in failure.
 **----------------------------------------------------------------------------**
@@ -148,10 +148,11 @@ class TreasureQuest:
                 self.restart_game()
                 break
             if options:
-                choice = input("Enter your choice (1 or 2): ").strip().lower()
+                choice = input("Enter your choice (either 1 or 2): "
+                               ).strip().lower()
                 while choice not in ["1", "2"]:
-                    print("Invalid choice. Please enter 1 or 2.")
-                    choice = input("Enter your choice (either 1 or 2): "
+                    print("\nInvalid choice. Please enter 1 or 2.")
+                    choice = input("\nEnter your choice (either 1 or 2): "
                                    ).strip().lower()
 
                 current_step = options[f"option_{choice}"]
