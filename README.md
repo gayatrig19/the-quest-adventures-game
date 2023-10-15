@@ -69,6 +69,35 @@ The website was developed through Codeanywhere IDE.
 - For more details on how to fork the repo, in order to for example suggest any changes to the 
   project you can visit:<https://docs.github.com/en/get-started/quickstart/fork-a-repo>
 
+## Deployment
+
+- The web application is displayed and deployed using template provided by Code Institue to test the
+  to test the code.
+
+- The project is deployed on Heroku as follows:
+1. Use: pip freeze > requirements.txt to add external libraries to deployed app.
+2. Create Heroku account
+3. In the top right, click 'New'
+4. Click 'Create new app'
+5. Give your app a name and select your region from drop down
+6. Click 'Create new app'
+7. Go to 'settings' tab, it's important you do it before deployment
+8. Scroll down to 'config vars' section and key: PORT and value: 8000
+9. Scroll down to 'Buildpacks' section
+10. Click 'Add buildpack'
+11. Add Python as first dependency and select 'Save changes'
+12. Add node.js as a second dependency and save again (This is settings section done)
+13. Select 'Deploy' tab at the top
+14. Select 'Github' from 'Deployment method'
+15. Type the name given to your project in Github and click 'search'
+16. Scroll down and select Manual deployment method
+17. You can also use Auto deployment method to allow the project to update every time you push the
+    code.  
+18. You can now click to view the app ready and running.
+
+- For this project I used Manual deployment method to deploy the current state of the branch, every
+  time I pushed the code from Codeanywhere.
+
 
 
 
