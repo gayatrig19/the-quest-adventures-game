@@ -38,6 +38,21 @@ The website was developed through Codeanywhere IDE.
     - git commit -m "message" - to commit the code to local repository ready to be pushed
     - git push - final command used to push committed code to remote repo on Github
 
+## Imports
+
+## Cloning the Repository
+
+1. On Github navigate to the repository "gayatrig19/the-quest-adventures-game"
+2. Click "Code" drop down menu - a green button shown right above the file list.
+3. Copy the URL of the repository using "HTTPS", "SSH" or "Github CLI".
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type "git clone", and then paste the URL copied earlier.
+7. Press enter to create local clone. A clone of the repository will now be created.
+
+- For more details on how to clone the repository in order to create a copy for own use refer to the 
+  site: <https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository>
+
 
 
 
