@@ -13,6 +13,33 @@ It is an interactive game where you take on the role of a daring adventurer on a
 - The game is build using Python as a Milestone Project#3 for the Code Institute's Full Stack Software
   Development Course.
 
+-------
+
+# User Experience (UX) and Design
+
+## User Stories
+
+## Design
+### Data Model
+### Flowchart
+
+
+## Tools and Technologies
+
+## Version Control
+
+The website was developed through Codeanywhere IDE.
+
+- Git
+
+  Code has been pushed to repository on Github with following git commands:
+
+    - git add . - to add files ready to commit
+    - git commit -m "message" - to commit the code to local repository ready to be pushed
+    - git push - final command used to push committed code to remote repo on Github
+
+
+
 
 
 
