@@ -1,3 +1,4 @@
+import os
 import sys
 import time
 
@@ -28,20 +29,29 @@ class TreasureQuest:
             time.sleep(delay)
         print()
 
+    def clear_screen(self):
+        """
+        Clear the screen based on the operating system.
+        """
+        if os.name == 'nt':  # For Windows
+            os.system('cls')
+        else:
+            os.system('clear')  # For Unix-based systems (Linux, macOS)
+
     def display_intro(self):
         """
         Display the game's introduction.
         """
         # Credit for ASCII art: https://fsymbols.com/generators/carty/
         print("""
-               
-    ████████╗██╗░░██╗███████╗   ░██████╗░██╗░░░██╗███████╗░██████╗████████╗
-    ╚══██╔══╝██║░░██║██╔════╝   ██╔═══██╗██║░░░██║██╔════╝██╔════╝╚══██╔══╝
-    ░░░██║░░░███████║█████╗░░   ██║██╗██║██║░░░██║█████╗░░╚█████╗░░░░██║░░░
-    ░░░██║░░░██╔══██║██╔══╝░░   ╚██████╔╝██║░░░██║██╔══╝░░░╚═══██╗░░░██║░░░
-    ░░░██║░░░██║░░██║███████╗   ░╚═██╔═╝░╚██████╔╝███████╗██████╔╝░░░██║░░░
-    ░░░╚═╝░░░╚═╝░░╚═╝╚══════╝   ░░░╚═╝░░░░╚═════╝░╚══════╝╚═════╝░░░░╚═╝░░░
-        """)  # noqa
+
+    ████████╗██╗░░██╗███████╗   ░██████╗░██╗░░░██╗███████╗░██████╗████████╗
+    ╚══██╔══╝██║░░██║██╔════╝   ██╔═══██╗██║░░░██║██╔════╝██╔════╝╚══██╔══╝
+    ░░░██║░░░███████║█████╗░░   ██║██╗██║██║░░░██║█████╗░░╚█████╗░░░░██║░░░
+    ░░░██║░░░██╔══██║██╔══╝░░   ╚██████╔╝██║░░░██║██╔══╝░░░╚═══██╗░░░██║░░░
+    ░░░██║░░░██║░░██║███████╗   ░╚═██╔═╝░╚██████╔╝███████╗██████╔╝░░░██║░░░
+    ░░░╚═╝░░░╚═╝░░╚═╝╚══════╝   ░░░╚═╝░░░░╚═════╝░╚══════╝╚═════╝░░░░╚═╝░░░
+        """)
         self.type_text("""
 **----------------------------------------------------------------------------**
          Welcome to "The Quest for the Lost Treasure" - an adventure
@@ -87,8 +97,8 @@ class TreasureQuest:
                 return username
 
             except ValueError as e:
-                print(f"\nInvalid Input: {e}")
-                print("Please try again.")
+                print(f"Invalid Input: {e}")
+                print("Please try again.\n")
 
     def restart_game(self):
         """
@@ -97,9 +107,10 @@ class TreasureQuest:
         an option to restart the game.
         """
         while True:
-            restart_choice = input("Would you like to play again?(yes/no): "
+            restart_choice = input("\nWould you like to play again?(yes/no): "
                                    ).strip().lower()
             if restart_choice == "yes":
+                self.clear_screen()
                 self.start_game()
                 break
             elif restart_choice == "no":
@@ -173,7 +184,7 @@ class TreasureQuest:
             if play_choice == "yes":
                 user_name = self.get_username_input()
                 self.type_text(f"""
-                   Welcome aboard, {user_name}!""")
+                       Welcome aboard, {user_name}!""")
                 print("""
          Our story starts in the heart of the bustling coastal town of
          Port Haven. A whispered legend has captured the imaginations of

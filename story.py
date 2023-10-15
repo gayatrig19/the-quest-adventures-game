@@ -9,14 +9,13 @@ story_description = {
 **--------------------------------------------------------------------------**
         As you set sail aboard the 'Black Serpent', your trusty ship,
         you and your crew have arrived at a mysterious island where
-        two paths stretch before you, each with its own challenges and
+        two paths stretch before you, each with it's own challenges and
         mysteries.
 
 **--------------------------------------------------------------------------**
         Option 1: Do you navigate the Enchanted Forest, where magic
                   fills the air and mythical creatures roam?
         Option 2: Or do you brave the treacherous Mountains of Shadows,
-                  where the secrets of the Scepter may be concealed
                   among the rugged peaks?
 **--------------------------------------------------------------------------**
                      """,
@@ -36,7 +35,7 @@ story_description = {
 
         The owl speaks to you: 'The path to the treasure lies through
         these woods, but it is treacherous and not for the faint of
-        heart. You must choose your way wisely'.
+        heart. You must choose your path wisely'.
 
         But the mystical trees with glowing leaves whispers secrets
         about the treasure, urging you to trust your own instincts.
@@ -59,7 +58,7 @@ story_description = {
 **--------------------------------------------------------------------------**
         You choose to brave the treacherous Mountains of Shadows,
         a place known for it's unforgiving terrain, where the secrets
-        of the Scepter may be concealed among the rugged peaks.
+        of the lost treasure may be concealed among the rugged peaks.
 
         As you ascend higher into the formidable mountains, you come
         across a fork in the path. One path leads further into the
@@ -281,10 +280,9 @@ story_description = {
 
         To your dismay, the Treasure Pillar reveals nothing more than a
         weathered relic. The anticipated golden doubloons, exquisite
-        jewels, and priceless artifacts are absent. Your crew,
-        initially brimming with excitement, now shares in the loads of
-        disappointment. Your quest for treasure has ended in unexpected
-        failure.
+        jewels, and priceless artifacts are absent. Your crew, initially
+        brimming with excitement, now shares in the loads of disappointment.
+        Your quest for treasure has ended in unexpected failure.
                 """,
                 "options": {},
                 "outcome": "failure"
