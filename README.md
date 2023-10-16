@@ -72,6 +72,8 @@ While implementing the project in Python, my primary focus was to incorporate Ob
 
 ### Flowchart
 
+![The Quest Game Flowchart](assets/quest_flowchart_drawio.png)
+
 
 ## Tools and Technologies
 
