@@ -19,15 +19,15 @@ It is an interactive game where you take on the role of a daring adventurer on a
 
 ## User Stories
 
-- As a user, I want to understand the purpose and intention of the site and application  
-  when it first starts.
+- As a user, I want to understand the purpose and intention of the site and application when I run
+  the program.
 - As a user, I want the navigation to be intuitive and easy to understand.
 - As a user, I want to have an option to start the game.
 - As a user, I want to be able to enter my name before I start to play the game.
 - As a user, I would like to see a welcome message and my name added to storyline for more engaging
   experience.
-- As a user I want my input to be validated and error checked each time, so I can re-enter my input/ 
-  choice if it is invalid.
+- As a user, I want my input to be validated and error checked each time, so I can re-enter my
+  input/choice if it is invalid.
 - As a user, I should not have to worry about capitalizing or lowercase when typing.
 - As a user I want the storyline and narrative to be coherent, engaging and well structured.
 - As a user, I want to receive the next part in the story depending on the input choices.
@@ -35,12 +35,41 @@ It is an interactive game where you take on the role of a daring adventurer on a
   succeeding or failing in the game.
 - As a user, I want see the final outcome of the game based on the choices made.
 - As a user, I want to have an opportunity to play again regardless of success or failure in the game.
-- As a user, I want to have multiple paths to explore for success or failure in the game.
+- As a user, I want to have engaging narrative with multiple paths to explore for success and failure
+  outcomes.
 - As a user, I want to be presented with choices throughout the game that allow me to choose my path
   based on story scenarios.
 
 ## Design
+
 ### Data Model
+
+While implementing the project in Python, my primary focus was to incorporate Object Oriented Programming(OOP) Paradigms as the project necessity is functionality-centered. The mechanics, interactions, and story progression are implemented using text-based input and output. During discussion with my mentor, he guided me on how I can use data structures for storyline instead of opting for text-based iteration to keep code well-structured and organized utilising DRY principle.
+
+- Classes: I used a single TreasureQuest Class containing story_description(dictionary) attribute and
+  methods to initialize the game instance for text-based adventure game using that dictionary,
+  encapsulating the game's functionality and story.
+
+- Dictionaries: The story_description dictionary contains the game's storyline, choices, and outcomes
+  structured as follows:
+     - Keys: Strings representing different steps in the game.
+     - Values: Dictionaries containing:
+          1. "step_text": Text describing the current step.
+          2. "options" (Dictionary): Available choices and their corresponding steps.
+          3. "outcome": Outcome of the current step ("success" or "failure").
+
+- Functions: To keep code readable and reusable, functions(play_game, display_intro, start_game,
+  get_user_input) are  used to display the game's introduction and loop through the game's story, displaying text, options, and handle user choices, leading to different outcomes. 
+
+- Input Validation: Each user input is validated and handled raising appropriate error depending on
+  game stage and option to re-enter user input is provided if it is invalid.
+
+- Separation of Concerns: Separated the game logic from the data(storyline) and the presentation
+  (text-based input and output) to follow a good design practice and keep code well-maintained.
+
+- The game defines various locations and sublocations, and the player can navigate through these  
+  areas based on their choices. The game uses text-based print statements to provide descriptions, dialogues, and narrations to convey the story and set more engaging atmosphere.
+
 ### Flowchart
 
 
