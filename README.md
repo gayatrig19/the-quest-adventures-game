@@ -88,9 +88,60 @@ While implementing the project in Python, my primary focus was to incorporate Ob
 
 - Regardless of the outcomes, user is provided option to play again, which either starts the game from
   beginning or exits depending on user choice.
+
+- Below is the final flowchart design which can be followed to see all alternatives and their final
+  outcomes.
    
-   
+
 ![The Quest Game Flowchart](assets/the_quest_flowchart_drawio.png)
+
+
+# Features
+
+## Existing Features
+
+#### Welcome Screen
+
+- The main game title in ASCII text Art and a welcome message is shown when user hits the run program
+  button. The welcome message is given a typewriter effect for a more game-immersive experience.
+- User is provided with an overview about the game and a general idea on how to play the game.
+- As it is a Python terminal based game, it is designed to be functionality-focused rather than 
+  visually appealing. The structure though is designed keeping in mind the aspects of the game.
+
+  ![welcome_screen_image](assets/welcome_screen_image.png)
+
+
+### Start Game Section
+
+- Here user is prompted whether he wants to start the game, based on choices the game proceeds. If
+  user has entered 'no' he is encouraged to play the game by providing a suitable feedback.
+- The user can add their name to give them a personalised welcome to the game. The user's name is
+  further used in the game story for providing player with a more personalized experience.
+
+![start_game_image](assets/start_game_image.png)
+
+
+### Game Steps Section
+
+- The user is then taken through a story with different scenarios and locations with detailed
+  explanation of the journey and provided choices for the user to choose from which path they want to take. Choosing different paths can lead to different outcomes.
+
+- Each story step is detailed and well-structured to give user an engaging adventure experience.
+
+
+![start_story_step](assets/play_game_image_step.png)
+
+
+- The storyline is designed to keep each step and options interconnected so that the user is not
+  diverted from the game.
+
+
+![story_steps](assets/play_game_image.png)
+
+
+
+
+
 
 
 ## Tools and Technologies
