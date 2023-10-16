@@ -158,9 +158,39 @@ While implementing the project in Python, my primary focus was to incorporate Ob
 
 
 - At the end, regardless of success or failure user is offered to play the game again. Based on the
-  choice, the game either starts from the beginning or exits.
+  choice, the game either starts from the beginning or exits with a message.
 
   ![play_again_image](assets/play_again_image.png)
+
+
+## Future Implementations 
+ 
+- To fix the identified bugs in the game.
+- Add colours to text and imagery for visual effect.
+- Expand the story for mutilpe levels(easy, medium and difficult) to give user more deep and
+   immersive game experience.
+- Use of google doc/ sheet to keep track of the number of players, their win and lose outcomes, a 
+  form of leaderboard to display at the end of the game. This will give me opportunity to work with google spreadsheets to perform CRUD operations.
+
+
+## Testing
+
+- Note: This game will not work on mobiles as it runs on the mock terminal. (credit: Mock terminal created by Code Institute). No accessibilty or responsivity testing was therefore needed.
+
+### Validator Testing
+
+ - Python code is tested using Code Institute PYTHON LINTER, with no errors. Code passed through and  
+   confirmed no problems.  
+
+  - validated run.py file:
+     
+     ![run_validator_testing](assets/python_validation_runpy_file.png)
+
+  
+  - validated story.py file:
+
+    ![story_validator_testing](assets/python_validation_storypy_file.png)
+
 
 
  
