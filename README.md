@@ -100,7 +100,7 @@ While implementing the project in Python, my primary focus was to incorporate Ob
 
 ## Existing Features
 
-#### Welcome Screen
+### Welcome Screen
 
 - The main game title in ASCII text Art and a welcome message is shown when user hits the run program
   button. The welcome message is given a typewriter effect for a more game-immersive experience.
@@ -132,11 +132,41 @@ While implementing the project in Python, my primary focus was to incorporate Ob
 ![start_story_step](assets/play_game_image_step.png)
 
 
-- The storyline is designed to keep each step and options interconnected so that the user is not
-  diverted from the game.
+- The storyline is designed to keep each step interconnected and user is provided with two options to 
+  choose from, based on the user choice the game paths can result in different outcomes. 
 
 
 ![story_steps](assets/play_game_image.png)
+
+
+### Success and Failure Outcomes
+
+- Based on user choices, there are multiple paths which can lead to either success or failure
+  outcomes.
+- The game is designed in such a way that user can explore multiple scenarios and locations based
+  upon the choices resulting in either of the result.
+- At the end of the user's journey, they are presented with a final text depending on their success or
+  failure in the quest.
+
+   - Success Text for the quest:
+     
+     ![success_outcome_image](assets/success_outcome_image.png)
+
+   - Failure Text for the quest:
+     
+     ![failure_outcome_image](assets/fail_outcome_image.png)
+
+
+- At the end, regardless of success or failure user is offered to play the game again. Based on the
+  choice, the game either starts from the beginning or exits.
+
+  ![play_again_image](assets/play_again_image.png)
+
+
+ 
+
+
+
 
 
 
