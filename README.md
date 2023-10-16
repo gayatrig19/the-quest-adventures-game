@@ -1,16 +1,16 @@
 # The Quest For The Lost Treasure
 
-![Website Application Mock Up](assets/the_quest_mockup_image.png)
+![Website Application Mock Up](assets/the_quest_mockup_screenshot.png)
 
 
 
 # Purpose 
 
-"The Quest for the Lost Treasure" is a command-line terminal text-based adventure game developed in Python. Embark on a thrilling journey through mysterious lands and uncover lost treasures in this adventure game that will put your decision-making skills to the test. 
+"The Quest for the Lost Treasure" is a Python command-line terminal text-based adventure game, which runs in the Code Institute mock terminal on Heroku. Embark on a thrilling journey through mysterious lands and uncover lost treasures in this adventure game that will put your decision-making skills to the test. 
 
-It is an interactive game where you take on the role of a daring adventurer on a mission to uncover the lost treasure hidden centuries ago. Your decisions and choices will determine the outcome of your quest, and the path you choose to follow will lead to various encounters, puzzles and, ultimately, the treasure's location. The game has multiple success and failure endings. The target audience is everyone who like to play games and are fan of adventure games.
+It is an interactive game where you take on the role of a daring adventurer on a mission to uncover the lost treasure hidden centuries ago. Your decisions and choices will determine the outcome of your quest, and the path you choose to follow will lead to various encounters, puzzles and, ultimately, the treasure's location. The game has multiple success and failure endings. The target audience is everyone who like to play games and are fan of story based adventure games.
 
-- The game is build using Python as a Milestone Project#3 for the Code Institute's Full Stack Software
+- The game is build in Python as a Milestone Project#3 for the Code Institute's Full Stack Software
   Development Course.
 
 -------
@@ -18,6 +18,26 @@ It is an interactive game where you take on the role of a daring adventurer on a
 # User Experience (UX) and Design
 
 ## User Stories
+
+- As a user, I want to understand the purpose and intention of the site and application  
+  when it first starts.
+- As a user, I want the navigation to be intuitive and easy to understand.
+- As a user, I want to have an option to start the game.
+- As a user, I want to be able to enter my name before I start to play the game.
+- As a user, I would like to see a welcome message and my name added to storyline for more engaging
+  experience.
+- As a user I want my input to be validated and error checked each time, so I can re-enter my input/ 
+  choice if it is invalid.
+- As a user, I should not have to worry about capitalizing or lowercase when typing.
+- As a user I want the storyline and narrative to be coherent, engaging and well structured.
+- As a user, I want to receive the next part in the story depending on the input choices.
+- As a user, I want to reach the end of the game through one of the paths chosen, by either
+  succeeding or failing in the game.
+- As a user, I want see the final outcome of the game based on the choices made.
+- As a user, I want to have an opportunity to play again regardless of success or failure in the game.
+- As a user, I want to have multiple paths to explore for success or failure in the game.
+- As a user, I want to be presented with choices throughout the game that allow me to choose my path
+  based on story scenarios.
 
 ## Design
 ### Data Model

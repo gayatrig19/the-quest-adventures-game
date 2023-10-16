@@ -9,7 +9,6 @@ class TreasureQuest:
     TreasureQuest class for a text-based adventure game.
     """
 
-
     def __init__(self):
         """
         Initialize the TreasureQuest game.
@@ -18,7 +17,6 @@ class TreasureQuest:
         choices.
         """
         self.story_description = story_description
-
 
     def type_text(self, text, delay=0.03):
         """
@@ -29,7 +27,6 @@ class TreasureQuest:
             sys.stdout.flush()
             time.sleep(delay)
         print()
-
 
     def display_intro(self):
         """
@@ -66,7 +63,6 @@ class TreasureQuest:
          embrace the excitement of the unknown. Good luck!!
             """)
 
-
     def get_username_input(self):
         """
         Prompt the user for username.
@@ -94,7 +90,6 @@ class TreasureQuest:
                 print(f"Invalid Input: {e}")
                 print("Please try again.\n")
 
-
     def restart_game(self):
         """
         Function to restart the game.
@@ -116,7 +111,6 @@ class TreasureQuest:
                 break
             else:
                 print("\nInvalid choice. Enter 'yes' to play again or 'no' to exit.")  # noqa
-
 
     def play_game(self, current_step="start"):
         """
@@ -163,7 +157,6 @@ class TreasureQuest:
                 current_step = options[f"option_{choice}"]
             else:
                 current_step = None
-
 
     def start_game(self):
         """
