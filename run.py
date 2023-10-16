@@ -81,8 +81,8 @@ class TreasureQuest:
                     raise ValueError("Username should only contain letters and numbers.")  # noqa
 
                 # Checks if the username is too short or too long
-                if len(username) <= 3 or len(username) > 20:
-                    raise ValueError("Username should be between 4 and 20 characters.")  # noqa
+                if len(username) < 3 or len(username) > 20:
+                    raise ValueError("Username should be between 3 and 20 characters.")  # noqa
 
                 return username
 

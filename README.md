@@ -44,11 +44,10 @@ It is an interactive game where you take on the role of a daring adventurer on a
 
 ### Data Model
 
-While implementing the project in Python, my primary focus was to incorporate Object Oriented Programming(OOP) Paradigms as the project necessity is functionality-centered. The mechanics, interactions, and story progression are implemented using text-based input and output. During discussion with my mentor, he guided me on how I can use data structures for storyline instead of opting for text-based iteration to keep code well-structured and organized utilising DRY principle.
+While implementing the project in Python, my primary focus was to incorporate Object Oriented Programming(OOP) Paradigms as the project necessity is functionality-centered. The mechanics, interactions, and story progression are implemented using text-based input and output. During discussion with my mentor, he guided me on how I can use data structures for storyline instead of opting for text-based iteration to keep code well-structured and organized utilising "Don't Repeat Yourself"(DRY) principle.
 
-- Classes: I used a single TreasureQuest Class containing story_description(dictionary) attribute and
-  methods to initialize the game instance for text-based adventure game using that dictionary,
-  encapsulating the game's functionality and story.
+- Classes: I have used a single TreasureQuest Class containing story_description(dictionary)
+  attribute and methods to initialize the game instance for the text-based adventure game using that  dictionary, encapsulating the game's functionality and story.
 
 - Dictionaries: The story_description dictionary contains the game's storyline, choices, and outcomes
   structured as follows:
@@ -72,7 +71,26 @@ While implementing the project in Python, my primary focus was to incorporate Ob
 
 ### Flowchart
 
-![The Quest Game Flowchart](assets/quest_flowchart_drawio.png)
+- Most of the text-based adventure games are primarily focused on providing user(player) with multiple
+  paths and choices to explore before reaching to its' final outcome(either success or failure).
+
+- The initial design for this project was simple with minimal paths with single nodes leading to win
+   or lose outcomes. But I wanted the game to be more engaging such that players are presented with choices at various points in the game, and these choices lead to different story paths and outcomes.
+
+- To achieve this the flowchart was redesigned number of times, and each time the story was modified
+  for expected paths and choices until the point where it offered multiple endings, depending on the decisions the player makes throughout the game. These endings can vary in terms of success, failure and different story conclusions.
+
+- The final flowchart design now showcase multiple paths with more engaging story narrative, offering 
+  multiple success and failure outcomes. Though the end result is either success or failure, but based on the user choices, the game has different paths and scenarios to reach the end.
+
+- For each step, the users receives a prompt to write their input, and the input is cross-checked
+  against the code for validation. If the user input is invalid, they are given error feedback and prompted again to input on the same step. Once valid input is received, the user goes on to the next step.
+
+- Regardless of the outcomes, user is provided option to play again, which either starts the game from
+  beginning or exits depending on user choice.
+   
+   
+![The Quest Game Flowchart](assets/the_quest_flowchart_drawio.png)
 
 
 ## Tools and Technologies
