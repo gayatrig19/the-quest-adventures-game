@@ -1,4 +1,3 @@
-import os
 import sys
 import time
 
@@ -7,8 +6,9 @@ from story import story_description
 
 class TreasureQuest:
     """
-    TreasureQuest class
+    TreasureQuest class for a text-based adventure game.
     """
+
 
     def __init__(self):
         """
@@ -18,6 +18,7 @@ class TreasureQuest:
         choices.
         """
         self.story_description = story_description
+
 
     def type_text(self, text, delay=0.03):
         """
@@ -29,14 +30,6 @@ class TreasureQuest:
             time.sleep(delay)
         print()
 
-    def clear_screen(self):
-        """
-        Clear the screen based on the operating system.
-        """
-        if os.name == 'nt':  # For Windows
-            os.system('cls')
-        else:
-            os.system('clear')  # For Unix-based systems (Linux, macOS)
 
     def display_intro(self):
         """
@@ -73,6 +66,7 @@ class TreasureQuest:
          embrace the excitement of the unknown. Good luck!!
             """)
 
+
     def get_username_input(self):
         """
         Prompt the user for username.
@@ -92,13 +86,14 @@ class TreasureQuest:
 
                 # Checks if the username is too short or too long
                 if len(username) <= 3 or len(username) > 20:
-                    raise ValueError("Username should be between 3 and 20 characters.")  # noqa
+                    raise ValueError("Username should be between 4 and 20 characters.")  # noqa
 
                 return username
 
             except ValueError as e:
                 print(f"Invalid Input: {e}")
                 print("Please try again.\n")
+
 
     def restart_game(self):
         """
@@ -110,7 +105,6 @@ class TreasureQuest:
             restart_choice = input("\nWould you like to play again?(yes/no): "
                                    ).strip().lower()
             if restart_choice == "yes":
-                self.clear_screen()
                 self.start_game()
                 break
             elif restart_choice == "no":
@@ -123,11 +117,11 @@ class TreasureQuest:
             else:
                 print("\nInvalid choice. Enter 'yes' to play again or 'no' to exit.")  # noqa
 
+
     def play_game(self, current_step="start"):
         """
         Main function to play the game's story.
         """
-        # Start the story from the beginning
         while current_step:
             step = self.story_description[current_step]
             step_text = step["step_text"]
@@ -141,7 +135,7 @@ class TreasureQuest:
             if outcome == "success":
                 self.type_text("""
 **----------------------------------------------------------------------------**
-        Congratulations on your triumphant adventure! You have succeeded in
+        Congratulations on your triumphant adventure! You are successful in
         your quest. As you sail back to Port Haven with your treasure-laden
         ship, the tales of your courage and determination will inspire
         generations to come. Thank you for joining us on this epic voyage,
@@ -153,7 +147,7 @@ class TreasureQuest:
             elif outcome == "failure":
                 self.type_text("""
 **----------------------------------------------------------------------------**
-    Unfortunately, your quest for the lost treasure has ended in failure.
+    Despite your best efforts, your quest for the lost treasure has failed.
 **----------------------------------------------------------------------------**
                     \n""")
                 self.restart_game()
@@ -170,13 +164,13 @@ class TreasureQuest:
             else:
                 current_step = None
 
+
     def start_game(self):
         """
         Displays introduction and rules of the game.
         Asks user if user wants to start the game.
         Checks if user has entered valid input.
         """
-        self.clear_screen()
         self.display_intro()
         while True:
             play_choice = input("\nAre you ready to play the Game? (yes/no): "
@@ -185,7 +179,7 @@ class TreasureQuest:
             if play_choice == "yes":
                 user_name = self.get_username_input()
                 self.type_text(f"""
-                       Welcome aboard, {user_name}!""")
+                       Welcome aboard, Captain {user_name}!""")
                 print("""
          Our story starts in the heart of the bustling coastal town of
          Port Haven. A whispered legend has captured the imaginations of
