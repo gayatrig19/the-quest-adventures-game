@@ -176,6 +176,7 @@ class TreasureQuest:
         Asks user if user wants to start the game.
         Checks if user has entered valid input.
         """
+        self.clear_screen()
         self.display_intro()
         while True:
             play_choice = input("\nAre you ready to play the Game? (yes/no): "
