@@ -173,6 +173,7 @@ While implementing the project in Python, my primary focus was to incorporate Ob
   form of leaderboard to display at the end of the game. This will give me opportunity to work with google spreadsheets to perform CRUD operations.
 
 
+
 ## Testing
 
 - Note: This game will not work on mobiles as it runs on the mock terminal. (credit: Mock terminal created by Code Institute). No accessibilty or responsivity testing was therefore needed.
@@ -191,6 +192,53 @@ While implementing the project in Python, my primary focus was to incorporate Ob
 
     ![story_validator_testing](assets/python_validation_storypy_file.png)
 
+### Functional Testing
+  
+
+
+
+### Manual Testing:
+
+- I tested the site in my local terminal and Code Institute Heroku Terminal.
+
+- Input Validation:
+
+The application is tested extensively for input validation. I have manually tested it by doing 
+following:
+
+- Proceed further with no input or input incorrect character/number for "Are you ready to play the 
+  game" prompt.
+     
+    - Response: Receive an error message and prompt "Are you ready to play the game"(yes/no) again.
+
+    
+    ![start_game_input_validation](assets/start_game_input_validation.png)
+
+
+- Input username with less than 3 characters/ containing special characters/ proceed without entering 
+  one:
+   
+    - Response: Error message is displayed based on the user action and a prompt to enter user name.
+
+
+    ![username_input_validation](assets/username_input_validation.png)
+
+
+- Input incorrect choice other than 1 and 2 for "Enter your choice" prompt while playing the game for 
+  different paths:
+
+    - Response: Error message is displayed for invalid choice and user is prompted to enter the 
+                choice again.
+
+    ![play_game_input_validation](assets/play_game_input_validation.png)        
+
+
+- At the end of the game, input incorrect character/ number/ press 'enter' with no input given for 
+  "Would you like to play again" prompt.
+
+    - Response: Receive an error message and prompt to enter the choice(yes/no) again.
+
+    ![play_again_input_validation](assets/play_again_input_validation.png)
 
 
  
