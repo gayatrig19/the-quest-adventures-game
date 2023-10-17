@@ -192,9 +192,6 @@ While implementing the project in Python, my primary focus was to incorporate Ob
 
     ![story_validator_testing](assets/python_validation_storypy_file.png)
 
-### Functional Testing
-  
-
 
 
 ### Manual Testing:
@@ -245,7 +242,7 @@ following:
     ![play_again_input_validation](assets/play_again_input_validation.png)
 
 
-## Functional Testing:
+### Functional Testing:
 
 Functional testing for user stories is as follows:
 
@@ -288,20 +285,37 @@ Functional testing for user stories is as follows:
    success and failure outcomes.
 
 
+### Unfixed Bugs
 
-
-
-
-
-
-
+There is one unfortunate bug that hasn't been resolved. I have used typewriter effect for displaying some parts of my game story text. During final stages of testing, a bug was discovered where the user can interfere with the game text while typewriter effect is printing which results in altering of the main storyline text. I was not able to trail any solution for the bug. During discussion with my mentor, he did come up with a solution. I wanted to study the solution code first before using it in my project, but with no time in hand, I decided to keep it unresolved as it is not breaking the underlying code.
 
 
 ## Tools and Technologies
 
+- [Python](https://www.python.org/) - used to develop the project (back end programming).
+- [GitHub](https://github.com/) - to host the source code online.
+- Codeanywhere built-in formatter to format structure for Python files in the project.
+- Codeanywhere - IDE to develop the website.
+- Git to provide the version control to commit and push code to the repository.
+- [Am I Responsive](http://amiresponsive.blogspot.com/) to create the Mockup image in this README.
+- [Heroku](https://www.heroku.com/) - to deploy the app.
+- Code Institute [PYTHON LINTER](https://pep8ci.herokuapp.com/#) used to validate the python code for
+  errors.
+- [Draw.io](https://app.diagrams.net/) - to create flowchart for the project.
+- [ASCII TEXT ART](https://fsymbols.com/) generator to create the command line title of the 
+  application.
+- Code Institute's Template to generate the workspace for the project.
+
+
+## Imports
+
+- sys: used for handling standard input and output streams
+- time: used for controlling the timing of text output game.
+
+
 ## Version Control
 
-The website was developed through Codeanywhere IDE.
+The site is developed through Codeanywhere IDE.
 
 - Git
 
@@ -311,7 +325,6 @@ The website was developed through Codeanywhere IDE.
     - git commit -m "message" - to commit the code to local repository ready to be pushed
     - git push - final command used to push committed code to remote repo on Github
 
-## Imports
 
 ## Cloning the Repository
 
@@ -325,6 +338,7 @@ The website was developed through Codeanywhere IDE.
 
 - For more details on how to clone the repository in order to create a copy for own use refer to the 
   site: <https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository>
+
 
 ## Forking
 
@@ -372,6 +386,11 @@ The website was developed through Codeanywhere IDE.
   time I pushed the code from Codeanywhere.
 
 
+# Credits
+
+- [OPENAI](https://openai.com/) - used to create the storyline and plots for the game.
+- The code for typewriter effect is referred from <https://github.com/Pauldwyer/Choose-your-adventure/blob/main/stories.py>
+- 
 
 
 
