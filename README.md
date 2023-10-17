@@ -288,7 +288,17 @@ Functional testing for user stories is as follows:
 
 ### Unfixed Bugs
 
-There is one unfortunate bug that hasn't been resolved. I have used typewriter effect for displaying some parts of my game story text. During final stages of testing, a bug was discovered where the user can interfere with the game text while typewriter effect is printing which results in altering of the main storyline text. I was not able to trail any solution for the bug. During discussion with my mentor, he did come up with a solution. I wanted to study the solution code first before using it in my project, but with no time in hand, I decided to keep it unresolved as it is not breaking the underlying code.
+- There is one unfortunate bug that hasn't been resolved. I have used typewriter effect for  displaying some parts of my game story text. During final stages of testing, a bug was discovered where the user can interfere with the game text while typewriter effect is printing which results in altering of the main storyline text. I was not able to trail any solution for the bug. During discussion with my mentor, he did come up with a solution. I wanted to study the solution code first before using it in my project, but with no time in hand, I decided to keep it unresolved as it is not breaking the underlying code.
+
+![typewriter_bug_image](assets/typewriter_bug.png)
+
+- When user inteferes with the computer typing effect, it can though result with some of the texts
+  taken in by following user input and displaying the error message of invalid choice/input. The user is re-prompted to input. But the flow of the game is not disturbed at any stage due to this bug. For smooth flow of the program it is best to enjoy the typwriter effect, sit back and play the game.
+
+![typing_effect_bug_image](assets/typing_effect_bug.png)
+
+- No other bugs are detected, the program runs smoothly at every stage for each user input and 
+  appropriate feedback as necessary.
 
 
 ## Tools and Technologies
@@ -357,6 +367,7 @@ The site is developed through Codeanywhere IDE.
 - For more details on how to fork the repo, in order to for example suggest any changes to the 
   project you can visit:<https://docs.github.com/en/get-started/quickstart/fork-a-repo>
 
+
 ## Deployment
 
 - The web application is displayed and deployed using template provided by Code Institute to test the
@@ -401,7 +412,6 @@ The site is developed through Codeanywhere IDE.
 
 
 # Acknowledgements
-
 
 - I would like to express my gratitude to my mentor, Ronan McClelland, for his unwavering guidance,
   moral support, encouragement, and invaluable suggestions throughout the project. The project review
