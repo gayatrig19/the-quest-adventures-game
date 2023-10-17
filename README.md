@@ -251,7 +251,7 @@ Functional testing for user stories is as follows:
     - Result: When user clicks on run program, the title in ASCII art and a welcome message with
               general idea and rules is displayed.
 
-2. Exoected: As a user, I want the navigation to be intuitive and easy to understand.
+2. Expected: As a user, I want the navigation to be intuitive and easy to understand.
     - Result: The user is provided with easy to understand options and choices to navigate throughout
               the game.
 

@@ -1,7 +1,7 @@
 # TreasureQuest Game Story Description
 # The dictionary, 'story_description', contains the narrative steps and
 # choices for the text-based adventure game 'TreasureQuest'. It provides the
-# storyline, options, and outcomes for the player's journey in the game.
+# story line, options, and outcomes for the player's journey in the game.
 
 story_description = {
             "start": {
@@ -31,7 +31,7 @@ story_description = {
         You choose to navigate the Enchanted Forest, a place where
         magic fills the air and mythical creatures roam. As you journey
         deeper into the forest, you encounter a wise old owl perched on
-        a moss-covered branch in the woods who offers you guidance.
+        a moss-covered branch in the woods who offer you guidance.
 
         The owl speaks to you: 'The path to the treasure lies through
         these woods, but it is treacherous and not for the faint of
