@@ -3,7 +3,7 @@
 ![Website Application Mock Up](assets/the_quest_mockup_screenshot.png)
 
 
-#### [Link to Live Website](https://the-quest-adventures-game-6da763a60cef.herokuapp.com/)
+## [Link to Live Website](https://the-quest-adventures-game-6da763a60cef.herokuapp.com/)
 
 # Purpose 
 
