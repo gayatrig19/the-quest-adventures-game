@@ -200,14 +200,16 @@ While implementing the project in Python, my primary focus was to incorporate Ob
 ### Manual Testing:
 
 - I tested the site in my local terminal and Code Institute Heroku Terminal.
+- For user testing, I passed the application link to my friends and family and received positive 
+  feedback, with some points to fix.
 
 - Input Validation:
 
 The application is tested extensively for input validation. I have manually tested it by doing 
 following:
 
-- Proceed further with no input or input incorrect character/number for "Are you ready to play the 
-  game" prompt.
+1. Proceed further with no input or input incorrect character/number for "Are you ready to play the 
+   game" prompt.
      
     - Response: Receive an error message and prompt "Are you ready to play the game"(yes/no) again.
 
@@ -215,33 +217,76 @@ following:
     ![start_game_input_validation](assets/start_game_input_validation.png)
 
 
-- Input username with less than 3 characters/ containing special characters/ proceed without entering 
-  one:
-   
+2. Input username with less than 3 characters/ containing special characters/ proceed without 
+   entering one.  
+  
     - Response: Error message is displayed based on the user action and a prompt to enter user name.
 
 
     ![username_input_validation](assets/username_input_validation.png)
 
 
-- Input incorrect choice other than 1 and 2 for "Enter your choice" prompt while playing the game for 
-  different paths:
+3. Input incorrect choice other than 1 and 2 for "Enter your choice" prompt while playing the game  
+   for different paths.
 
     - Response: Error message is displayed for invalid choice and user is prompted to enter the 
                 choice again.
 
+
     ![play_game_input_validation](assets/play_game_input_validation.png)        
 
 
-- At the end of the game, input incorrect character/ number/ press 'enter' with no input given for 
+4. At the end of the game, input incorrect character/ number/ press 'enter' with no input given for 
   "Would you like to play again" prompt.
 
     - Response: Receive an error message and prompt to enter the choice(yes/no) again.
 
+
     ![play_again_input_validation](assets/play_again_input_validation.png)
 
 
- 
+## Functional Testing:
+
+Functional testing for user stories is as follows:
+
+1. Expected: As a user, I want to understand the purpose and intention of the site and application  
+   when I run the program.
+    - Result: When user clicks on run program, the title in ASCII art and a welcome message with
+              general idea and rules is displayed.
+
+2. Exoected: As a user, I want the navigation to be intuitive and easy to understand.
+    - Result: The user is provided with easy to understand options and choices to navigate throughout
+              the game.
+
+3. Expected: As a user, I want to have an option to start the game.
+             As a user, I should not have to worry about capitalizing or lowercase when typing.
+    - Result: User is prompted with option for starting the game. Input by user(uppercase and
+              lowercase) is handled as required correctly.
+
+4. Expected: As a user, I want to be able to enter my name before I start to play the game.
+             I would like to see a welcome message and my name added to storyline for more engaging
+             experience.
+    - Result: User is prompted to enter name which is further used in welcome message and storyline
+              for personalized experience.
+
+5. Expected: As a user, I want my input to be validated and error checked each time, so I can 
+             re-enter my input/choice if it is invalid.
+    - Result: Input validation is carried out at each step where user input is required and error 
+              message is displayed if it is invalid prompting user to re-enter the input/choice.
+
+6. Expected: As a user, I want to receive the next part in the story depending on the input choices.
+             As a user, I want see the final outcome of the game based on the choices made.
+    - Result: User is taken further to next part of the game depending on the choices and paths taken.
+              and provided with final text(success or failure) at the end of the game.
+
+7. Expected: As a user, I want to have an opportunity to play again regardless of success or failure 
+             in the game.
+    - Result: At the end of the game, user is given an option to play again, based on user choices,
+              the game exits or start from beginning.
+
+8. User can explore different paths and scenarios with engaging story during the game, for multiple 
+   success and failure outcomes.
+
 
 
 
