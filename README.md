@@ -30,7 +30,7 @@ It is an interactive game where you take on the role of a daring adventurer on a
 - As a user, I want my input to be validated and error checked each time, so I can re-enter my
   input/choice if it is invalid.
 - As a user, I should not have to worry about capitalizing or lowercase when typing.
-- As a user I want the storyline and narrative to be coherent, engaging and well structured.
+- As a user I want the story line and narrative to be coherent, engaging and well-structured.
 - As a user, I want to receive the next part in the story depending on the input choices.
 - As a user, I want to reach the end of the game through one of the paths chosen, by either
   succeeding or failing in the game.
@@ -45,12 +45,12 @@ It is an interactive game where you take on the role of a daring adventurer on a
 
 ### Data Model
 
-While implementing the project in Python, my primary focus was to incorporate Object Oriented Programming(OOP) Paradigms as the project necessity is functionality-centered. The mechanics, interactions, and story progression are implemented using text-based input and output. During discussion with my mentor, he guided me on how I can use data structures for storyline instead of opting for text-based iteration to keep code well-structured and organized utilising "Don't Repeat Yourself"(DRY) principle.
+While implementing the project in Python, my primary focus was to incorporate Object Oriented Programming(OOP) Paradigms as the project necessity is functionality-centered. The mechanics, interactions, and story progression are implemented using text-based input and output. During discussion with my mentor, he guided me on how I can use data structures for story line instead of opting for text-based iteration to keep code well-structured and organized utilising "Don't Repeat Yourself"(DRY) principle.
 
 - Classes: I have used a single TreasureQuest Class containing story_description(dictionary)
   attribute and methods to initialize the game instance for the text-based adventure game using that  dictionary, encapsulating the game's functionality and story.
 
-- Dictionaries: The story_description dictionary contains the game's storyline, choices, and outcomes
+- Dictionaries: The story_description dictionary contains the game's story line, choices, and outcomes
   structured as follows:
      - Keys: Strings representing different steps in the game.
      - Values: Dictionaries containing:
@@ -64,16 +64,16 @@ While implementing the project in Python, my primary focus was to incorporate Ob
 - Input Validation: Each user input is validated and handled raising appropriate error depending on
   game stage and option to re-enter user input is provided if it is invalid.
 
-- Separation of Concerns: Separated the game logic from the data(storyline) and the presentation
+- Separation of Concerns: Separated the game logic from the data(story line) and the presentation
   (text-based input and output) to follow a good design practice and keep code well-maintained.
 
-- The game defines various locations and sublocations, and the player can navigate through these  
+- The game defines various locations and sub locations, and the player can navigate through these  
   areas based on their choices. The game uses text-based print statements to provide descriptions, dialogues, and narrations to convey the story and set more engaging atmosphere.
 
 ### Flowchart
 
 - Most of the text-based adventure games are primarily focused on providing user(player) with multiple
-  paths and choices to explore before reaching to its' final outcome(either success or failure).
+  paths and choices to explore before reaching to it's final outcome(either success or failure).
 
 - The initial design for this project was simple with minimal paths with single nodes leading to win
    or lose outcomes. But I wanted the game to be more engaging such that players are presented with choices at various points in the game, and these choices lead to different story paths and outcomes.
@@ -117,7 +117,7 @@ While implementing the project in Python, my primary focus was to incorporate Ob
 - Here user is prompted whether he wants to start the game, based on choices the game proceeds. If
   user has entered 'no' he is encouraged to play the game by providing a suitable feedback.
 - The user can add their name to give them a personalised welcome to the game. The user's name is
-  further used in the game story for providing player with a more personalized experience.
+  further used in the game story for providing player with a more engaging atmosphere.
 
 ![start_game_image](assets/start_game_image.png)
 
@@ -145,7 +145,7 @@ While implementing the project in Python, my primary focus was to incorporate Ob
 - Based on user choices, there are multiple paths which can lead to either success or failure
   outcomes.
 - The game is designed in such a way that user can explore multiple scenarios and locations based
-  upon the choices resulting in either of the result.
+  upon the choices resulting in either of the outcomes.
 - At the end of the user's journey, they are presented with a final text depending on their success or
   failure in the quest.
 
@@ -168,10 +168,10 @@ While implementing the project in Python, my primary focus was to incorporate Ob
  
 - To fix the identified bugs in the game.
 - Add colours to text and imagery for visual effect.
-- Expand the story for mutilpe levels(easy, medium and difficult) to give user more deep and
+- Expand the story for multiple levels(easy, medium and difficult) to give user more deeper and
    immersive game experience.
 - Use of google doc/ sheet to keep track of the number of players, their win and lose outcomes, a 
-  form of leaderboard to display at the end of the game. This will give me opportunity to work with google spreadsheets to perform CRUD operations.
+  form of leader board to display at the end of the game. This will give me opportunity to work with google spreadsheets to perform CRUD operations.
 
 
 
@@ -274,7 +274,7 @@ Functional testing for user stories is as follows:
 
 6. Expected: As a user, I want to receive the next part in the story depending on the input choices.
              As a user, I want see the final outcome of the game based on the choices made.
-    - Result: User is taken further to next part of the game depending on the choices and paths taken.
+    - Result: User is taken further to next part of the game depending on the choices and paths taken
               and provided with final text(success or failure) at the end of the game.
 
 7. Expected: As a user, I want to have an opportunity to play again regardless of success or failure 
@@ -310,8 +310,8 @@ There is one unfortunate bug that hasn't been resolved. I have used typewriter e
 
 ## Imports
 
-- sys: used for handling standard input and output streams
-- time: used for controlling the timing of text output game.
+- sys: used for handling standard input and output streams during typewriter effect.
+- time: used for controlling the timing of text output game for typewriter effect.
 
 
 ## Version Control
@@ -359,8 +359,8 @@ The site is developed through Codeanywhere IDE.
 
 ## Deployment
 
-- The web application is displayed and deployed using template provided by Code Institue to test the
-  to test the code.
+- The web application is displayed and deployed using template provided by Code Institute to test the
+  code.
 
 - The project is deployed on Heroku as follows:
 1. Use: pip freeze > requirements.txt to add external libraries to deployed app.
@@ -391,7 +391,24 @@ The site is developed through Codeanywhere IDE.
 
 - [OPENAI](https://openai.com/) - used to create the storyline and plots for the game.
 - The code for typewriter effect is referred from <https://github.com/Pauldwyer/Choose-your-adventure/blob/main/stories.py>
-- 
+- The concept of how to use OOP in Python programming is studied from <https://www.educative.io/blog/how-to-use-oop-in-python> and <https://realpython.com/python3-object-oriented-programming/#:~:text=When%20you%20create%20an%20instance,from%20one%20instance%20to%20another.>
+- The implementation of the story dictionary and iteration in the project is guided by my mentor, Ronan McClelland.
+- Additional sources for implementing a game using data structures is studied from <https://medium.com/@a.hop/vocabulary-game-in-python-68932b850c49>
+- Stack Overflow
+- Code Institute mock terminal template to run the app.
+- [ASCII TEXT ART](https://fsymbols.com/) generator to create the command line title of the 
+  application.
+
+
+# Acknowledgements
+
+
+- I would like to express my gratitude to my mentor, Ronan McClelland, for his unwavering guidance,
+  moral support, encouragement, and invaluable suggestions throughout the project. The project review
+  sessions with my mentor, along with his solutions to my questions and the study materials he provided, were instrumental in the success of this project.
+- I am also deeply thankful to my family and friends for their willingness to test the app and
+  provide valuable feedback.
+- Thank you Slack Community for answering all my questions and doubts.
 
 
 
